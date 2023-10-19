@@ -1,0 +1,58 @@
+/* Estilo para el fondo de la página */
+body {
+    background-color: #000; /* Fondo negro */
+    color: #FFF; /* Texto blanco para legibilidad en el fondo negro */
+    text-align: center; /* Centra el contenido en la página */
+}
+
+/* Estilo para el contenedor */
+.container {
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para las columnas */
+.columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1; /* Distribuye el espacio de manera uniforme entre las columnas */
+    text-align: left; /* Alinea el contenido de las columnas a la izquierda */
+    margin: 10px; /* Añade espacio entre las columnas */
+}
+
+/* Estilo para los elementos h1 en el encabezado */
+h1 {
+    font-size: 24px;
+}
+
+/* Estilo para los elementos h2 en las columnas */
+.column h2 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+/* Estilo para los párrafos en las columnas */
+.column p {
+    font-size: 16px;
+}
+
+/* Estilo para los botones */
+.button {
+    display: inline-block;
+    background-color: #800000; /* Color de fondo */
+    color: #FFF; /* Texto en blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px;
+    margin-top: 10px; /* Espacio superior */
+}
+
+/* Estilo para los botones al pasar el mouse */
+.button:hover {
+    background-color: #A52A2A; /* Color de fondo en el hover */
+}
