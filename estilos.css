@@ -1,128 +1,3 @@
-/* Estilo para el fondo de la página */s
-body {
-    background-color: #000;
-    color: #FFF;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-/* Estilo para el contenedor principal */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Estilo para los encabezados */
-h1 {
-    font-size: 28px;
-    color: #800000;
-}
-
-h2 {
-    font-size: 24px;
-    color: #800000;
-    margin-bottom: 20px; /* Espacio inferior uniforme */
-}
-
-/* Estilo para los párrafos */
-p {
-    font-size: 18px;
-    margin-bottom: 20px; /* Espacio inferior uniforme */
-}
-
-/* Estilo para las columnas */
-.columns {
-    display: flex;
-    justify-content: space-between;
-}
-
-.column {
-    flex: 1;
-    text-align: left;
-    margin: 10px;
-    background-color: #000; /* Fondo negro */
-    border-radius: 5px;
-    padding: 20px;
-    color: #fff; /* Texto en blanco para un mejor contraste */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave en las columnas */
-}
-
-/* Estilo para los botones */
-.button {
-    display: inline-block;
-    background-color: #800000;
-    color: #FFF;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-top: 10px;
-    border: 1px solid #800000; /* Borde de 1px en color rojo oscuro */
-}
-
-/* Estilo para los botones al pasar el mouse */
-.button:hover {
-    background-color: #A52A2A;
-}
-
-/* Estilo para la imagen */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Estilo para la barra de navegación */
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex; /* Alineación de elementos en la barra */
-    justify-content: center; /* Centrar los elementos en la barra */
-}
-
-nav li {
-    margin: 0 20px; /* Espaciado entre elementos */
-}
-
-/* Estilo para los enlaces de navegación */
-nav a {
-    color: #800000; /* Color de enlace de navegación */
-    transition: color 0.3s; /* Transición de color al pasar el mouse */
-}
-
-nav a:hover {
-    color: #A52A2A; /* Cambio de color al pasar el mouse */
-}
-/* Estilo para los encabezados en las columnas */
-.column h2 {
-    font-size: 24px;
-    color: #800000;
-    text-align: center; /* Centrar el texto */
-    margin-bottom: 20px; /* Espacio inferior uniforme */
-}
-/* Estilo para los párrafos */
-p {
-    font-size: 18px;
-    text-align: center; /* Centrar el texto */
-    margin-bottom: 20px; /* Espacio inferior uniforme */
-}
-/* Estilo para los botones */
-.button {
-    display: block;
-    margin: 0 auto;
-    background-color: #800000;
-    color: #FFF;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-top: 10px;
-    text-align: center; /* Centrar el texto horizontalmente */
-    line-height: 1.5; /* Añadir espacio vertical alrededor del texto para centrarlo verticalmente */
-}
-
 /* Estilo para el fondo de la página */
 body {
     background-color: #000;
@@ -131,6 +6,7 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 /* Estilo para el contenedor principal */
@@ -141,20 +17,17 @@ body {
 }
 
 /* Estilo para los encabezados */
-h1 {
+h1, h2 {
     font-size: 28px;
     color: #800000;
-}
-
-h2 {
-    font-size: 24px;
-    color: #800000;
+    text-align: center;
     margin-bottom: 20px; /* Espacio inferior uniforme */
 }
 
 /* Estilo para los párrafos */
 p {
     font-size: 18px;
+    text-align: center; /* Centrar el texto */
     margin-bottom: 20px; /* Espacio inferior uniforme */
 }
 
@@ -177,15 +50,17 @@ p {
 
 /* Estilo para los botones */
 .button {
-    display: inline-block;
+    display: block;
     background-color: #800000;
     color: #FFF;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
+    margin: 0 auto; /* Añadido para centrar horizontalmente */
     margin-top: 10px;
-    border: 1px solid #800000; /* Borde de 1px en color rojo oscuro */
+    text-align: center; /* Centrar el texto horizontalmente */
+    line-height: 1.5; /* Añadir espacio vertical alrededor del texto para centrarlo verticalmente */
 }
 
 /* Estilo para los botones al pasar el mouse */
@@ -220,39 +95,8 @@ nav a {
 nav a:hover {
     color: #A52A2A; /* Cambio de color al pasar el mouse */
 }
-/* Estilo para los encabezados en las columnas */
-.column h2 {
-    font-size: 24px;
-    color: #800000;
-    text-align: center; /* Centrar el texto */
-    margin-bottom: 20px; /* Espacio inferior uniforme */
-}
-/* Estilo para los párrafos */
-p {
-    font-size: 18px;
-    text-align: center; /* Centrar el texto */
-    margin-bottom: 20px; /* Espacio inferior uniforme */
-}
-/* Estilo para los botones */
-.button {
-    display: block;
-    margin: 0 auto;
-    background-color: #800000;
-    color: #FFF;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-top: 10px;
-    text-align: center; /* Centrar el texto horizontalmente */
-    line-height: 1.5; /* Añadir espacio vertical alrededor del texto para centrarlo verticalmente */
-}
-body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
 
+/* Estilo para el video de fondo */
 .video-container {
     position: relative;
     width: 100%;
@@ -270,6 +114,7 @@ video {
     z-index: -1;
 }
 
+/* Estilo para el contenido sobre el video */
 .content {
     position: absolute;
     top: 50%;
@@ -279,13 +124,4 @@ video {
     color: #FFF; /* Color del texto en el contenido */
 }
 
-h1 {
-    font-size: 36px;
-}
-
-p {
-    font-size: 18px;
-}
-
 /* Estilos adicionales según tus preferencias */
-

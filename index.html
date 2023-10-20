@@ -8,60 +8,58 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <h1>La Cocina</h1>
-            <img src="la-cocina.jpg" alt="Título: La Cocina" width="300">
-            <p>Bienvenido a "La Cocina," parte de nuestra mafia en el servidor roleplay. Aquí encontrarás intrigantes recetas y secretos culinarios que se comparten entre nuestros miembros.</p>
-        </div>
-        <div class="video-container">
-            <video autoplay loop muted poster="imagen_de_fallback.jpg">
-                <source src="tu_video.mp4" type="video/mp4">
-                <!-- Agrega más fuentes de video si deseas ofrecer compatibilidad con diferentes navegadores -->
-                Tu navegador no soporta el elemento de video.
-            </video>
-            <div class="content">
-                <h1>Bienvenido a Mi Sitio Web</h1>
-                <p>Este es un ejemplo de un video de fondo en una página web.</p>
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="tu-video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="content">
+        <header>
+            <div class="container">
+                <h1>La Cocina</h1>
+                <img src="la-cocina.jpg" alt="Título: La Cocina" width="300">
+                <p>Bienvenido a "La Cocina," parte de nuestra mafia en el servidor roleplay. Aquí encontrarás intrigantes recetas y secretos culinarios que se comparten entre nuestros miembros.</p>
             </div>
+        </header>
+
+        <nav>
+            <ul class="options">
+                <li><a href="#" aria-label="Enlace de reclutamiento">Reclutamiento</a></li>
+                <li><a href="#" aria-label="Enlace de reglas">Reglas</a></li>
+                <li><a href="#" aria-label="Enlace de más información">Más</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <section class="columns">
+                <article class="column">
+                    <h2>Eventos</h2>
+                    <p>Descubre nuestros emocionantes eventos.</p>
+                    <a href="#" class="button" aria-label="Ver eventos">Ver Eventos</a>
+                </article>
+                
+                <article class="column">
+                    <h2>Peleas</h2>
+                    <p>Buscamos peleadores, apostadores y patrocinadores.</p>
+                    <a href="#" class="button" aria-label="Ver eventos de peleas">Ver Peleas</a>
+                </article>
+            </section>
+            <section class="columns">
+                <article class="column">
+                    <h2>Reclutamiento</h2>
+                    <p>Si eres nivel 10 o superior, ¡únete a nosotros!</p>
+                    <a href="#" class="button" aria-label="Ver información de reclutamiento">Ver Reclutamiento</a>
+                </article>
+                
+                <article class="column">
+                    <h2>Ubicación</h2>
+                    <p>Nuestra mafia se encuentra en [nombre de la ciudad], en [dirección]. ¡Ven a visitarnos!</p>
+                    <a href="#" class="button" aria-label="Ver ubicación">Ver Ubicación</a>
+                </article>
+                </article>
+            </section>
         </div>
-    </header>
-
-    <nav>
-        <ul class="options">
-            <li><a href="#" aria-label="Enlace de reclutamiento">Reclutamiento</a></li>
-            <li><a href="#" aria-label="Enlace de reglas">Reglas</a></li>
-            <li><a href="#" aria-label="Enlace de más información">Más</a></li>
-        </ul>
-    </nav>
-
-    <div class="container">
-        <section class="columns">
-            <article class="column">
-                <h2>Eventos</h2>
-                <p>Descubre nuestros emocionantes eventos.</p>
-                <a href="#" class="button" aria-label="Ver eventos">Ver Eventos</a>
-            </article>
-            
-            <article class="column">
-                <h2>Peleas</h2>
-                <p>Buscamos peleadores, apostadores y patrocinadores.</p>
-                <a href="#" class="button" aria-label="Ver eventos de peleas">Ver Peleas</a>
-            </article>
-        </section>
-        <section class="columns">
-            <article class="column">
-                <h2>Reclutamiento</h2>
-                <p>Si eres nivel 10 o superior, ¡únete a nosotros!</p>
-                <a href="#" class="button" aria-label="Ver información de reclutamiento">Ver Reclutamiento</a>
-            </article>
-            
-            <article class="column">
-                <h2>Ubicación</h2>
-                <p>Nuestra mafia se encuentra en [nombre de la ciudad], en [dirección]. ¡Ven a visitarnos!</p>
-                <a href="#" class="button" aria-label="Ver ubicación">Ver Ubicación</a>
-            </article>
-        </section>
     </div>
 </body>
 </html>
