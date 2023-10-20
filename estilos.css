@@ -125,3 +125,7 @@ video {
 }
 
 /* Estilos adicionales según tus preferencias */
+img {
+    max-width: 100%;
+    height: auto;
+}
