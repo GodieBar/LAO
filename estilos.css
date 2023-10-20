@@ -129,3 +129,7 @@ img {
     max-width: 100%;
     height: auto;
 }
+body {
+    margin-top: 20px; /* Margen en la parte superior */
+    margin-bottom: 20px; /* Margen en la parte inferior */
+}
