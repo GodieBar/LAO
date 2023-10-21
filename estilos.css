@@ -16,6 +16,10 @@ body {
 
 /* Encabezado */
 .header {
+    background-image: url('la-cocina.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background: linear-gradient(to bottom, #222, #000); /* Degradado oscuro */
     padding: 20px 0;
     text-align: center;
@@ -65,6 +69,10 @@ body {
 }
 
 .column {
+    background-image: url('la-cocina.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     flex: 1;
     text-align: center;
     margin: 20px;
