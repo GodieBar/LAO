@@ -64,8 +64,7 @@ body {
 .columns {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
-    column-gap: 1px; /* Distancia más corta entre las columnas */
-    gap: 40px
+    gap: 40px; /* Espacio entre columnas */
 }
 
 .column {
