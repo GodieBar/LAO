@@ -1,0 +1,96 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+.header {
+    background: #222 url('/D:\repositorios\pagina\GodieBar.github.io\subcarpetas\Imagenes\la-cocina.jpg') center/cover no-repeat;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.header .main-title {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.header .main-nav {
+    margin-top: 20px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff0000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #800000;
+}
+
+/* Bloque de patrocinador */
+.sponsor {
+    width: 48%;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.sponsor:hover {
+    transform: rotateY(10deg);
+}
+
+.sponsor img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Personaliza el pie de página */
+.footer {
+    background: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
