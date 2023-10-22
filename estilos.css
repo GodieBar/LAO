@@ -173,14 +173,65 @@ body {
 .login-container input[type="submit"]:hover {
     background-color: #A52A2A;
 }
-@media (max-width: 768px) {
-    /* Estilos para pantallas más pequeñas, como teléfonos */
-}
 @media (min-width: 769px) {
     /* Estilos para pantallas más grandes, como tabletas y computadoras */
 }
+.menu-toggle {
+    display: none; /* Oculta el menú de hamburguesa en pantallas grandes */
+}
+
 @media (max-width: 768px) {
-    .main-title, .options, .login-container {
-        text-align: center;
+    .menu-toggle {
+        display: block; /* Muestra el menú de hamburguesa en pantallas pequeñas */
     }
+}
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav li {
+    margin: 10px;
+}
+@media (max-width: 768px) {
+    .main-nav ul {
+        display: none; /* Oculta el menú de navegación en pantallas pequeñas */
+    }
+
+    .main-nav ul.active {
+        display: flex; /* Muestra el menú de navegación cuando está activo */
+    }
+}
+/* Estilo para el botón de hamburguesa */
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Cambia la apariencia del botón de hamburguesa cuando está activo (abierto) */
+.menu-toggle.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Estilo para el menú de navegación en pantallas pequeñas */
+.main-nav ul.active {
+    display: flex;
 }
