@@ -7,11 +7,13 @@ body {
     padding: 0;
 }
 
+/* Encabezado */
 header {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
+    margin-bottom: 20px;
 }
 
 h1 {
@@ -19,35 +21,74 @@ h1 {
     margin: 0;
 }
 
+/* Contenedor principal */
 main {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Estilos para secciones de apostadores y apuestas */
-.apostadores, .apuestas {
+/* Secciones (Patrocinadores, Creadores, Agradecimiento) */
+.sponsors, .creators, .thank-you {
     margin: 40px 0;
 }
 
+/* Títulos de secciones */
 h2 {
     font-size: 28px;
+    margin: 0 0 20px;
+}
+
+/* Contenedor para elementos (Patrocinadores, Creadores, Agradecimiento) */
+.sponsor, .creator, .thank-you {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     margin-bottom: 20px;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+/* Imágenes de patrocinadores y creadores */
+.sponsor img, .creator img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
-li {
+/* Títulos de patrocinadores y creadores */
+h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Párrafos */
+p {
     font-size: 16px;
-    margin: 5px 0;
+    line-height: 1.6;
+    margin: 0;
 }
 
+/* Pie de página */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
+}
+/* Estilo para el enlace "Inicio" en la barra de navegación */
+.menu-link {
+    background-color: #007BFF; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espacio alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s; /* Agrega una transición al color de fondo */
+
+    /* Estilo al pasar el cursor por encima */
+    &:hover {
+        background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor por encima */
+    }
 }
