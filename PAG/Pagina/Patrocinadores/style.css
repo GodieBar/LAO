@@ -77,6 +77,7 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
 /* Estilo para el enlace "Inicio" en la barra de navegación */
 .menu-link {
     background-color: #007BFF; /* Color de fondo */
@@ -85,10 +86,27 @@ footer {
     border-radius: 5px; /* Bordes redondeados */
     text-decoration: none; /* Quita el subrayado del enlace */
     font-weight: bold; /* Texto en negrita */
-    transition: background-color 0.3s; /* Agrega una transición al color de fondo */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
 
-    /* Estilo al pasar el cursor por encima */
-    &:hover {
-        background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor por encima */
-    }
+    /* Transición suave para los cambios de estilo */
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+}
+
+/* Estilo al pasar el cursor por encima */
+.menu-link:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor por encima */
+    border-radius: 8px; /* Bordes más redondeados al pasar el cursor por encima */
+}
+
+/* Estilo del botón con imagen */
+.menu-link.button {
+    background: url('la-cocina.jpg') no-repeat center;
+    background-size: contain; /* Ajusta esto según el tamaño de tu imagen */
+    width: 100px; /* Ancho deseado del botón */
+    height: 100px; /* Alto deseado del botón */
+    display: block; /* Convierte el enlace en un elemento de bloque */
+    text-align: center; /* Alinea el contenido al centro */
+    line-height: 100px; /* Centra verticalmente el contenido en el botón */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
 }
