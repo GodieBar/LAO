@@ -179,3 +179,8 @@ body {
 @media (min-width: 769px) {
     /* Estilos para pantallas más grandes, como tabletas y computadoras */
 }
+@media (max-width: 768px) {
+    .main-title, .options, .login-container {
+        text-align: center;
+    }
+}
