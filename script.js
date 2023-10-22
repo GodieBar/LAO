@@ -1,32 +1,32 @@
-window.onload = function () {
-    alert("Prohibido difundir este link");
-}
-
 // Función para abrir y cerrar el menú de hamburguesa
-function toggleMenu() {
+function toggleMenu(event) {
     const menuToggle = document.querySelector('.menu-toggle');
-    const mainNav = document.querySelector('.main-nav ul');
+    const mainNav = document.querySelector('.main-nav');
 
     mainNav.classList.toggle('active');
     menuToggle.classList.toggle('active');
+
+    // Obtén las coordenadas del clic
+    const x = event.clientX;
+    const y = event.clientY;
+
+    // Ajusta la posición del menú desplegable
+    mainNav.style.left = x + 'px';
+    mainNav.style.top = y + 'px';
 }
 
-// Función para cerrar el modal
-function cerrarModal() {
-    var modal = document.getElementById('myModal');
-    modal.style.display = 'none';
-}
+// Obtener el botón de hamburguesa
+const menuToggle = document.querySelector('.menu-toggle');
 
-document.addEventListener('DOMContentLoaded', function () {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelectorAll('.main-nav ul li a');
+// Agregar un evento clic al botón de hamburguesa
+menuToggle.addEventListener('click', (event) => {
+    toggleMenu(event); // Abre el menú
+});
 
-    menuToggle.addEventListener('click', toggleMenu);
-
-    // Cerrar el menú cuando se hace clic en un enlace
-    navLinks.forEach((link) => {
-        link.addEventListener('click', () => {
-            toggleMenu(); // Cierra el menú
-        });
-    });
+// Cerrar el menú cuando se hace clic en cualquier parte del documento
+document.addEventListener('click', (event) => {
+    if (!menuToggle.contains(event.target) && !mainNav.contains(event.target)) {
+        mainNav.classList.remove('active');
+        menuToggle.classList.remove('active');
+    }
 });
