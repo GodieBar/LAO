@@ -1,0 +1,105 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+    <header>
+        <h1>Iniciar Sesión</h1>
+    </header>
+    <div class="login-container">
+        <form action="login.php" method="post" class="login-form">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Iniciar Sesión">
+        </form>
+    </div>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cocina</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="main-title">La Cocina</h1>
+            <nav class="main-nav">
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    🥷 <!-- Emoji de ninja Unicode -->
+                    <ul class="dropdown">
+                        <li><a href="#" aria-label="Contacto">Contacto</a></li>
+                        <li><a href="#" aria-label="Compras">Compras</a></li>
+                        <li><a href="#" aria-label="Intercambios">Intercambios</a></li>
+                    </ul>
+                </div>                
+                <ul class="options">
+                    <li><a href="#" aria-label="Donaciones">Donaciones</a></li>
+                    <li><a href="#" aria-label="Youtube">Youtube</a></li>
+                    <li><a href="#" aria-label="Discord">Discord</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="content">
+        <div class="container">
+            <section class="columns">
+                <article class="column" style="background-image: url('2.gif');">
+                    <h2 class="column-title">Patrocinadores</h2>
+                    <p class="column-text">¡Únete a nosotros!</p>
+                    <a href="#" class="button" aria-label="Ver Patrocinadores">Ver Patrocinadores</a>
+                </article>
+                <article class="column" style="background-image: url('1.gif');">
+                    <h2 class="column-title">Apostadores</h2>
+                    <p class="column-text">Sé parte de nuestro club.</p> <!-- Corregida la clase -->
+                    <a href="#" class="button" aria-label="Ver Roleadores">Ver Roleadores</a>
+                </article>
+                <article class="column" style="background-image: url('3.gif');">
+                    <h2 class="column-title">Eventos</h2>
+                    <p class="column-text">Descubre eventos.</p>
+                    <a href="#" class="button" aria-label="Ver eventos">Ver Eventos</a>
+                </article>
+                <article class="column" style="background-image: url('4.gif');">
+                    <h2 class="column-title">Peleas</h2>
+                    <p class="column-text">Buscamos peleadores.</p>
+                    <a href="#" class="button" aria-label="Ver eventos de peleas">Ver Peleas</a>
+                </article>
+            </section>
+        </div>
+    </div>
+    <div class="login-container" style="background-image: url('la-cocina.jpg');">
+        <div class="container">
+            <h2>Iniciar Sesión</h2>
+            <form action="procesar_login.php" method="post">
+                <label for="username">Nombre de Usuario:</label>
+                <input type="text" name="username" id="username" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" name="password" id="password" required>
+                <input type="submit" value="Ingresar">
+            </form>
+        </div>
+    </div>      
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <h2 class="modal-title"></h2>
+            <p class="modal-content"></p>
+        </div>
+    </div>
+</body>
+</html>
+>>>>>>> 9780807dcce75ee370dc92a188fa41a6ccd3af4b
