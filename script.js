@@ -1,33 +1,32 @@
-// script.js
 window.onload = function () {
     alert("Prohibido difundir este link");
 }
-// Obtener elementos del menú y el botón de hamburguesa
-const menuToggle = document.querySelector(".menu-toggle");
-const mainNav = document.querySelector(".main-nav ul");
-// Agregar un evento clic al botón de hamburguesa
-menuToggle.addEventListener("click", () => {
-    mainNav.classList.toggle("active");
-});// Función para abrir y cerrar el modal
+
+// Función para abrir y cerrar el menú de hamburguesa
+function toggleMenu() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mainNav = document.querySelector('.main-nav ul');
+
+    mainNav.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+}
+
+// Función para cerrar el modal
 function cerrarModal() {
     var modal = document.getElementById('myModal');
     modal.style.display = 'none';
 }
-// Función para mostrar el menú desplegable en pantallas pequeñas
-document.querySelector('.menu-toggle').addEventListener('click', function () {
-    var mainNav = document.querySelector('.main-nav ul');
-    mainNav.classList.toggle('active');
-});
-// Cerrar el menú cuando se hace clic en un enlace
-const navLinks = document.querySelectorAll(".main-nav ul li a");
-navLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-        mainNav.classList.remove("active");
+
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelectorAll('.main-nav ul li a');
+
+    menuToggle.addEventListener('click', toggleMenu);
+
+    // Cerrar el menú cuando se hace clic en un enlace
+    navLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+            toggleMenu(); // Cierra el menú
+        });
     });
 });
-// Agrega un evento de clic al botón de hamburguesa para alternar el menú
-menuToggle.addEventListener('click', function() {
-    mainNav.classList.toggle('active');
-    menuToggle.classList.toggle('active');
-});
-
