@@ -173,3 +173,9 @@ body {
 .login-container input[type="submit"]:hover {
     background-color: #A52A2A;
 }
+@media (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas, como teléfonos */
+}
+@media (min-width: 769px) {
+    /* Estilos para pantallas más grandes, como tabletas y computadoras */
+}
