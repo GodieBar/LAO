@@ -15,7 +15,7 @@ body {
 
 /* Encabezado */
 .header {
-    background: #222 url('/D:\repositorios\pagina\GodieBar.github.io\subcarpetas\Imagenes\la-cocina.jpg') center/cover no-repeat;
+    background: #222 url('tu-imagen-de-fondo.jpg') center/cover no-repeat;
     padding: 20px 0;
     text-align: center;
     color: #fff;
@@ -50,6 +50,9 @@ body {
     font-weight: bold;
     margin: 0 10px;
     transition: background-color 0.3s;
+    background-image: url('/subcarpetas/Imagenes/la-cocina.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .menu a:hover {
