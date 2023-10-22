@@ -216,3 +216,7 @@ body {
 .menu-toggle.active .bar:nth-child(3) {
     transform: rotate(45deg) translate(-4px, -6px); /* Ajusta la posición de las barras cuando está activo */
 }
+/* Estilos generales */
+@media (max-width: 768px) {
+    /* Agregar estilos específicos para pantallas pequeñas */
+}
