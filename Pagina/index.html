@@ -1,77 +1,49 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Cocina</title>
-    <link rel="stylesheet" type="text/css" href="estilos.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Nuestros Patrocinadores y Creadores</title>
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <h1 class="main-title">La Cocina</h1>
-            <nav class="main-nav">
-                <div class="menu-toggle" onclick="toggleMenu()">
-                    🥷
-                    <ul class="dropdown">
-                        <li><a href="#" aria-label="Contacto">Contacto</a></li>
-                        <li><a href="#" aria-label="Compras">Compras</a></li>
-                        <li><a href="#" aria-label="Intercambios">Intercambios</a></li>
-                    </ul>
-                </div>                
-                <ul class="options">
-                    <li><a href="#" aria-label="Donaciones">Donaciones</a></li>
-                    <li><a href="#" aria-label="Youtube">Youtube</a></li>
-                    <li><a href="#" aria-label="Discord">Discord</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="D:\PAG\Pagina\index.html">Inicio</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="content">
-        <div class="container">
-            <section class="columns">
-                <article class="column" style="background-image: url('subcarpetas/Imagenes/2.gif');">
-                    <h2 class="column-title">Patrocinadores</h2>
-                    <p class="column-text">¡Únete a nosotros!</p>
-                    <a href="Subcarpetas/Patrocinadores/index.html" class="button" aria-label="Ver Patrocinadores">Ver Patrocinadores</a>
-                </article>
-                <article class="column" style="background-image: url('subcarpetas/Imagenes/1.gif');">
-                    <h2 class="column-title">Apostadores</h2>
-                    <p class="column-text">Sé parte de nuestro club.</p>
-                    <a href="Subcarpetas/Apuestas/index.html" class="button" aria-label="Ver Apuestas">Ver Apuestas</a>
-                </article>
-                <article class="column" style="background-image: url('subcarpetas/Imagenes/3.gif');">
-                    <h2 class="column-title">Eventos</h2>
-                    <p class="column-text">Descubre eventos.</p>
-                    <a href="Subcarpetas/Eventos/index.html" class="button" aria-label="Ver Eventos">Ver Eventos</a>
-                </article>
-                <article class="column" style="background-image: url('subcarpetas/Imagenes/4.gif');">
-                    <h2 class="column-title">Peleas</h2>
-                    <p class="column-text">Buscamos peleadores.</p>
-                    <a href="Subcarpetas/Peleas/index.html" class="button" aria-label="Ver Peleas">Ver Peleas</a>
-                </article>
-            </section>
-        </div>
-    </div>
-    <div class="login-container" style="background-image: url('subcarpetas/Imagenes/la-cocina.jpg');">
-        <div class="container">
-            <h2>Iniciar Sesión</h2>
-            <form action="procesar_login.php" method="post">
-                <label for="username">Nombre de Usuario:</label>
-                <input type="text" name="username" id="username" required>
-                <label for="password">Contraseña:</label>
-                <input type="password" name="password" id="password" required>
-                <input type="submit" value="Ingresar">
-            </form>
-        </div>
-    </div>      
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="cerrarModal()">&times;</span>
-            <h2 class="modal-title"></h2>
-            <p class="modal-content"></p>
-        </div>
-    </div>
+    
+    <main>
+        <section class="sponsors">
+            <h2>Nuestros Patrocinadores</h2>
+            <div class="sponsor">
+                <img src="sponsor1.jpg" alt="Patrocinador 1">
+                <h3>Nombre del Patrocinador 1</h3>
+                <p>Descripción del patrocinador 1.</p>
+            </div>
+            <!-- Agrega más bloques de patrocinadores según sea necesario -->
+        </section>
+
+        <section class="creators">
+            <h2>Nuestros Creadores</h2>
+            <div class="creator">
+                <img src="creator1.jpg" alt="Creador 1">
+                <h3>Diego Salvatore</h3>
+                <p>Programador y CEO de la Cocina</p>
+            </div>
+            <!-- Agrega más bloques de creadores según sea necesario -->
+        </section>
+
+        <section class="thank-you">
+            <h2>Agradecimiento a Nuestros Donadores</h2>
+            <p>Agradecemos sinceramente su generosidad y apoyo continuo. Sus contribuciones son el motor que impulsa nuestro proyecto y nos inspira a trabajar incansablemente hacia un futuro mejor.</p>
+            <p>Su confianza en nosotros nos llena de gratitud y determinación. Juntos, estamos logrando grandes cosas y esperamos continuar compartiendo este emocionante viaje.</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2023 La Cocina. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
