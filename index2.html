@@ -5,42 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Cocina</title>
     <link rel="stylesheet" type="text/css" href="estilos.css">
-    <style>
-        /* Estilo para el menú desplegable */
-        .main-nav {
-            position: absolute;
-            display: none;
-            background: #fff; /* Color de fondo del menú */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-            padding: 10px;
-            border-radius: 5px;
-            z-index: 1; /* Asegura que esté por encima de otros elementos */
-        }
-
-        .main-nav.active {
-            display: block; /* Muestra el menú cuando está activo */
-        }
-    </style>
+    <script src="script.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="container">
             <h1 class="main-title">La Cocina</h1>
-            <div class="menu-container">
-                <div class="menu-toggle">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-                <ul class="main-nav">
+            <nav class="main-nav">
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    🥷 <!-- Emoji de ninja Unicode -->
+                    <ul class="dropdown">
+                        <li><a href="#" aria-label="Contacto">Contacto</a></li>
+                        <li><a href="#" aria-label="Compras">Compras</a></li>
+                        <li><a href="#" aria-label="Intercambios">Intercambios</a></li>
+                    </ul>
+                </div>                
+                <ul class="options">
                     <li><a href="#" aria-label="Donaciones">Donaciones</a></li>
                     <li><a href="#" aria-label="Youtube">Youtube</a></li>
                     <li><a href="#" aria-label="Discord">Discord</a></li>
-                    <li><a href="#" aria-label="Contacto">Contacto</a></li>
-                    <li><a href="#" aria-label="Compras">Compras</a></li>
-                    <li><a href="#" aria-label="Intercambios">Intercambios</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
     </header>
     <div class="content">
@@ -53,7 +38,7 @@
                 </article>
                 <article class="column" style="background-image: url('1.gif');">
                     <h2 class="column-title">Apostadores</h2>
-                    <p class="column-text">Sé parte de nuestro club.</p>
+                    <p class="column-text">Sé parte de nuestro club.</p> <!-- Corregida la clase -->
                     <a href="#" class="button" aria-label="Ver Roleadores">Ver Roleadores</a>
                 </article>
                 <article class="column" style="background-image: url('3.gif');">
@@ -69,19 +54,18 @@
             </section>
         </div>
     </div>
-    </div>
-    <div class="login-container">
+    <div class="login-container" style="background-image: url('la-cocina.jpg');">
         <div class="container">
             <h2>Iniciar Sesión</h2>
             <form action="procesar_login.php" method="post">
                 <label for="username">Nombre de Usuario:</label>
                 <input type="text" name="username" id="username" required>
                 <label for="password">Contraseña:</label>
-                <input type="password" name "password" id="password" required>
+                <input type="password" name="password" id="password" required>
                 <input type="submit" value="Ingresar">
             </form>
         </div>
-    </div>
+    </div>      
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="cerrarModal()">&times;</span>
@@ -89,6 +73,5 @@
             <p class="modal-content"></p>
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>

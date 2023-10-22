@@ -260,7 +260,6 @@ body {
     display: block;
     transition: color 0.3s;
 }
-
 .menu-toggle .dropdown li:hover {
     background-color: #800000; /* Cambia el fondo al pasar el ratón sobre los elementos de la lista */
 }   
