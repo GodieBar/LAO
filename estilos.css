@@ -70,7 +70,7 @@ body {
 .column {
     width: 200px; /* Tamaño fijo de 200x200 píxeles */
     height: 200px;
-    background-image: url('la-cocina.jpg');
+    background-image: url('1.gif');
     background-size: cover;
     background-position: center;    
     background-repeat: no-repeat;
