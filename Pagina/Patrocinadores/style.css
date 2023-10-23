@@ -250,3 +250,7 @@ body {
 .menu-toggle.active .dropdown {
     display: block;
 }
+.section-title {
+    text-align: center;
+    margin: 0 auto;
+}
