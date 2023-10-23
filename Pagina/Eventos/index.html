@@ -1,9 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>   body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        background-color: #000;
+    }
+
+    header {
+        background: linear-gradient(to bottom, #222, #000);
+        padding: 20px 0;
+        text-align: center;
+        color: #fff;
+    }
+
+    header .main-title {
+        font-size: 36px;
+        margin-top: 20px;
+    }
+
+    header .main-nav {
+        margin-top: 20px;
+    }
+
+    header .main-nav .options {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        color: #800000;
+    }
+
+    header .main-nav .options li {
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+        color: #a70808;
+        transition: color 0.3s;
+        display: flex;
+        justify-content: center;
+    }
+
+    header .main-nav .options li a:hover {
+        color: #800000;
+    }
+
+    header .main-nav .options li a {
+        text-decoration: none;
+        color: #ff0000;
+        transition: color 0.3s;
+    }
+
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    h2 {
+        color: #333;
+    }
+
+    .sponsor, .creator {
+        margin: 20px 0;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        background: linear-gradient(to bottom, #222, #000);
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+    </style> 
+    </body>
+    
     <title>Página de Eventos</title>
 </head>
 <body>
@@ -38,43 +119,41 @@
         <h1 class="main-title">Próximos Eventos</h1>
     </header>
 
-    <main>
+    <main> <div class="content">   
         <div class="container">
-            <section class="eventos">
-                <h2>Eventos Próximos</h2>
-                <ul>
-                    <li>
-                        <h3>Evento 1</h3>
-                        <p>Descripción del evento 1.</p>
-                        <p>Fecha: 15 de noviembre de 2023</p>
-                    </li>
-                    <li>
-                        <h3>Evento 2</h3>
-                        <p>Descripción del evento 2.</p>
-                        <p>Fecha: 20 de diciembre de 2023</p>
-                    </li>
-                    <!-- Agrega más eventos próximos según sea necesario -->
-                </ul>
+            <section class="columns">
+                <article class="column" style="background-image: url('/subcarpetas/Imagenes/2.gif');">
+                    <h2 class="column-title">Evento 1 </h2>
+                    <p class="column-text">Descripción Evento.</p>
+                    <a href="enlace_patrocinador1.html" class="button" aria-label="Apuesta 1">Ver Patrocinador 1</a>
+                </article>
+                <article class="column" style="background-image: url('/subcarpetas/Imagenes/1.gif');">
+                    <h2 class="column-title">Evento 2</h2>
+                    <p class="column-text">Descripción del segundo patrocinador.</p>
+                    <a href="enlace_patrocinador2.html" class="button" aria-label="Apuesta 2 2">Ver Patrocinador 2</a>
+                </article>   <!-- Puedes agregar más patrocinadores siguiendo el mismo formato -->
             </section>
-
-            <section class="eventos-pasados">
-                <h2>Eventos Pasados</h2>
-                <ul>
-                    <li>
-                        <h3>Evento Pasado 1</h3>
-                        <p>Descripción del evento pasado 1.</p>
-                        <p>Fecha: 10 de octubre de 2023</p>
-                    </li>
-                    <li>
-                        <h3>Evento Pasado 2</h3>
-                        <p>Descripción del evento pasado 2.</p>
-                        <p>Fecha: 5 de septiembre de 2023</p>
-                    </li>
-                    <!-- Agrega más eventos pasados según sea necesario -->
-                </ul>
-            </section>
-        </div>
+    <header class="header">
+        <div class="container">
+            <nav class="main-nav"> 
+                 <h1 class="main-title">Apuestas mensuales</h1>
+                </nav>       
+            </div>
     </main>
+    <div class="content">   
+        <div class="container">
+            <section class="columns">
+                <article class="column" style="background-image: url('/subcarpetas/Imagenes/3.gif');">
+                    <h2 class="column-title">Patrocinador 1</h2>
+                    <p class="column-text">Descripción del primer mensual.</p>
+                    <a href="enlace_patrocinador1.html" class="button" aria-label="Apuesta Mensual 1">Apuesta mensual 1</a>
+                </article>
+                <article class="column" style="background-image: url('/subcarpetas/Imagenes/4.gif');">
+                    <h2 class="column-title">Apuesta Mensual 1</h2>
+                    <p class="column-text">Esta es una opcion te permite conseguir una apuesta mensual</p>
+                    <a href="enlace_patrocinador2.html" class="button" aria-label="Apuesta Mensual 2">Ver Patrocinador 2</a>
+                </article>   <!-- Puedes agregar más patrocinadores siguiendo el mismo formato -->
+            </section>
 
     <footer>
         <div class="container">
