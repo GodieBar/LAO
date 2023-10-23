@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patrocinadores y Colaboradores de La Cocina</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>La Cocina</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <nav class="main-nav">
+            <nav class="main-nav">         
                 <ul class="options">
                     <li><a href="https://GodieBar.github.io" class="menu-link">Inicio</a></li>
                     <li><a href="https://godiebar.github.io/Pagina/Patrocinadores/index.html" class="menu-link">Patrocinadores</a></li>
                     <li><a href="https://godiebar.github.io/Pagina/Apuestas/index.html" class="menu-link">Apuestas</a></li>
                     <li><a href="https://godiebar.github.io/Pagina/Eventos/index.html" class="menu-link">Eventos</a></li>
                     <li><a href="https://godiebar.github.io/Pagina/Peleas/index.html" class="menu-link">Peleas</a></li>
-                </ul>
-                <h1 class="main-title">La Cocina</h1>
+                </ul> 
+            </nav>
+            <h1 class="main-title">La Cocina</h1>
+            <nav class="main-nav">
                 <div class="menu-toggle" onclick="toggleMenu()">
                     🥷
                     <ul class="dropdown">
@@ -25,7 +28,7 @@
                         <li><a href="#" aria-label="Compras">Compras</a></li>
                         <li><a href="#" aria-label="Intercambios">Intercambios</a></li>
                     </ul>
-                </div>
+                </div>                
                 <ul class="options">
                     <li><a href="URL_de_donaciones" aria-label="Donaciones">Donaciones</a></li>
                     <li><a href="https://www.youtube.com/@Godie_524/videos" aria-label="Youtube">Youtube</a></li>
@@ -34,49 +37,35 @@
             </nav>
         </div>
     </header>
-    <main>
-        <section class="section">
-            <div class="container">
-                <h1 class="section-title">Patrocinadores</h1>
-                <div class="columns">
-                    <article class="column" style="background-image: url('/subcarpetas/Imagenes/2.gif');">
-                        <h2 class="column-title">Patrocinador 1</h2>
-                        <p class="column-text">Descripción del primer patrocinador.</p>
-                        <a href="enlace_patrocinador1.html" class="button" aria-label="Ver Patrocinador 1">Ver Patrocinador 1</a>
-                    </article>
-                    <article class="column" style="background-image: url('/subcarpetas/Imagenes/1.gif');">
-                        <h2 class="column-title">Patrocinador 2</h2>
-                        <p class="column-text">Descripción del segundo patrocinador.</p>
-                        <a href="enlace_patrocinador2.html" class="button" aria-label="Ver Patrocinador 2">Ver Patrocinador 2</a>
-                    </article>
-                    <!-- Puedes agregar más patrocinadores siguiendo el mismo formato -->
-                </div>
-            </div>
-        </section>
-        <section class="section">
-            <div class="container">
-                <h1 class="section-title">Colaboradores de La Cocina</h1>
-                <div class="columns">
-                    <article class="column" style="background-image: url('/subcarpetas/Imagenes/3.gif');">
-                        <h2 class="column-title">Goding</h2>
-                        <p class="column-text">Diseñador web.</p>
-                        <a href="enlace_patrocinador1.html" class="button" aria-label="Sigue a Goding">Seguir a Goding</a>
-                    </article>
-                    <article class="column" style="background-image: url('/subcarpetas/Imagenes/4.gif');">
-                        <h2 class="column-title">Colaborador 2</h2>
-                        <p class="column-text">Descripción del segundo Colaborador.</p>
-                        <a href="enlace_patrocinador2.html" class="button" aria-label="Ver Colaborador 2">Ver Colaborador 2</a>
-                    </article>
-                    <!-- Puedes agregar más colaboradores siguiendo el mismo formato -->
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
+    <div class="content">   
         <div class="container">
-            <p>&copy; 2023 Patrocinadores y Colaboradores de La Cocina. Todos los derechos reservados.</p>
+            <section class="columns">
+                <article class="column" style="background-image: url('subcarpetas/Imagenes/2.gif');">
+                    <h2 class="column-title">Patrocinadores</h2>
+                    <p class="column-text">¡Únete a nosotros!</p>
+                    <a href="https://godiebar.github.io/Pagina/Patrocinadores/index.html" class="button" aria-label="Ver Patrocinadores">Ver Patrocinadores</a>
+                </article>
+                <article class="column" style="background-image: url('subcarpetas/Imagenes/1.gif');">
+                    <h2 class="column-title">Apostadores</h2>
+                    <p class="column-text">Sé parte de nuestro club.</p>
+                    <a href="https://godiebar.github.io/Pagina/Apuestas/index.html" class="button" aria-label="Ver Apuestas">Ver Apuestas</a>
+                </article>
+                <article class="column" style="background-image: url('subcarpetas/Imagenes/3.gif');">
+                    <h2 class="column-title">Eventos</h2>
+                    <p class="column-text">Descubre eventos.</p>
+                    <a href="https://godiebar.github.io/Pagina/Eventos/index.html" class="button" aria-label="Ver Eventos">Ver Eventos</a>
+                </article>
+                <article class="column" style="background-image: url('subcarpetas/Imagenes/4.gif');">
+                    <h2 class="column-title">Peleas</h2>
+                    <p class="column-text">Buscamos peleadores.</p>
+                    <a href="https://godiebar.github.io/Pagina/Peleas/index.html" class="button" aria-label="Ver Peleas">Ver Peleas</a>
+                </article>
+            </section>
         </div>
-    </footer>
+    </div>
+    <div class="login-container" style="background-image: url('subcarpetas/Imagenes/la-cocina.jpg');">
+
+    </div>      
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="cerrarModal()">&times;</span>
@@ -84,6 +73,8 @@
             <p class="modal-content"></p>
         </div>
     </div>
-    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2023 La Cocina.</p>
+    </footer>
 </body>
 </html>
