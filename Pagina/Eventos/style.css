@@ -270,3 +270,12 @@ body {
 .section-title {
     text-align: center;
 }
+/* Reduce el margen inferior para la sección-título */
+.section-title {
+    margin-bottom: 10px; /* Ajusta el valor según tus preferencias */
+}
+
+/* Reduce el margen inferior para los artículos en las secciones */
+.columns .column {
+    margin-bottom: 10px; /* Ajusta el valor según tus preferencias */
+}
