@@ -232,32 +232,38 @@ body {
     background: #333; /* Fondo de la lista desplegable */
     list-style: none;
     padding: 0;
-    margin: 0;
-    z-index: 1;
-}
-
-.menu-toggle .dropdown li {
-    padding: 10px;
-    text-align: center;
-    color: #fff;
-    border-bottom: 1px solid #555;
-}
-
-.menu-toggle .dropdown li:last-child {
-    border-bottom: none;
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para la lista desplegable */
+    z-index: 1; /* Asegura que la lista desplegable esté sobre otros elementos */
 }
 
 .menu-toggle.active .dropdown {
     display: block;
 }
-.section-title {
+
+.menu-toggle .dropdown li {
+    display: block;
     text-align: center;
-    margin: 0 auto;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #555; /* Línea entre elementos */
 }
-.section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 30vh;
+
+.menu-toggle .dropdown li:last-child {
+    border-bottom: none; /* Elimina la línea en el último elemento */
 }
+
+.menu-toggle .dropdown li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: color 0.3s;
+}
+
+.menu-toggle .dropdown li:hover {
+    background-color: #800000; /* Cambia el fondo al pasar el ratón sobre los elementos de la lista */
+}   
+.menu-toggle:hover .dropdown {
+    display: block; /* Muestra la lista desplegable al pasar el ratón por encima del botón */
+} 
