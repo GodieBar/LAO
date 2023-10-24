@@ -1,5 +1,5 @@
 /* Estilos generales */
-body {
+body { 
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -71,12 +71,12 @@ body {
     width: 200px; /* Tamaño fijo de 200x200 píxeles */
     height: 200px;
     background-size: cover;
-    background-position: center;
+    background-position: center;    
     background-repeat: no-repeat;
     color: #fff;
     text-align: center;
     padding: 25px;
-    margin: 0; /* Elimina el margen que causaba la ubicación incorrecta */
+    margin: 0;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -176,26 +176,26 @@ body {
 .menu-toggle {
     display: inline-block;
     cursor: pointer;
-    font-size: 30px; /* Tamaño del icono de hamburguesa */
-    color: #fff; /* Color del icono de hamburguesa */
+    font-size: 30px;
+    color: #fff;
     cursor: pointer;
-    margin: 10px; /* Espacio entre el icono y el borde de su contenedor */
-    position: relative; /* Agregar posición relativa para que funcione el menú desplegable */
-    user-select: none; /* Evita que el texto se seleccione al hacer clic en el botón */
-    border: 2px solid #fff; /* Borde alrededor del icono de hamburguesa */
-    padding: 5px; /* Espacio dentro del botón de hamburguesa */
-    border-radius: 5px; /* Bordes redondeados */
+    margin: 10px;
+    position: relative;
+    user-select: none;
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 5px;
     transition: background-color 0.2s, color 0.2s;
 }
 
 .menu-toggle:hover {
-    background-color: #fff; /* Cambia el fondo al pasar el ratón sobre el botón de hamburguesa */
-    color: #800000; /* Cambia el color del icono de hamburguesa al pasar el ratón */
+    background-color: #fff;
+    color: #800000;
 }
 
 .menu-toggle.active {
-    background-color: #fff; /* Cambia el fondo cuando está activo el menú de hamburguesa */
-    color: #800000; /* Cambia el color del icono de hamburguesa cuando está activo el menú */
+    background-color: #fff;
+    color: #800000;
 }
 
 .menu-toggle .bar {
@@ -229,12 +229,12 @@ body {
     position: absolute;
     top: 100%;
     left: 0;
-    background: #333; /* Fondo de la lista desplegable */
+    background: #333;
     list-style: none;
     padding: 0;
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para la lista desplegable */
-    z-index: 1; /* Asegura que la lista desplegable esté sobre otros elementos */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }
 
 .menu-toggle.active .dropdown {
@@ -247,23 +247,37 @@ body {
     color: #fff;
     padding: 10px;
     font-size: 16px;
-    border-bottom: 1px solid #555; /* Línea entre elementos */
+    border-bottom: 1px solid #555;
 }
 
 .menu-toggle .dropdown li:last-child {
-    border-bottom: none; /* Elimina la línea en el último elemento */
+    border-bottom: none;
 }
 
 .menu-toggle .dropdown li a {
     text-decoration: none;
     color: #fff;
     display: block;
-    transition: color 0.3s;
 }
 
 .menu-toggle .dropdown li:hover {
-    background-color: #800000; /* Cambia el fondo al pasar el ratón sobre los elementos de la lista */
+    background-color: #800000;
 }
+
 .menu-toggle:hover .dropdown {
-    display: block; /* Muestra la lista desplegable al pasar el ratón por encima del botón */
+    display: block;
+}
+
+/* Estilos personalizados para sección */
+.section-title {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
 }
