@@ -1,5 +1,5 @@
 /* Estilos generales */
-body { 
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -71,7 +71,7 @@ body {
     width: 200px; /* Tamaño fijo de 200x200 píxeles */
     height: 200px;
     background-size: cover;
-    background-position: center;    
+    background-position: center;
     background-repeat: no-repeat;
     color: #fff;
     text-align: center;
@@ -181,7 +181,7 @@ body {
     cursor: pointer;
     margin: 10px; /* Espacio entre el icono y el borde de su contenedor */
     position: relative; /* Agregar posición relativa para que funcione el menú desplegable */
-    user-select: none; /* Evita que el texto se seleccione al hacer clic en el botón */ 
+    user-select: none; /* Evita que el texto se seleccione al hacer clic en el botón */
     border: 2px solid #fff; /* Borde alrededor del icono de hamburguesa */
     padding: 5px; /* Espacio dentro del botón de hamburguesa */
     border-radius: 5px; /* Bordes redondeados */
@@ -263,7 +263,7 @@ body {
 
 .menu-toggle .dropdown li:hover {
     background-color: #800000; /* Cambia el fondo al pasar el ratón sobre los elementos de la lista */
-}   
+}
 .menu-toggle:hover .dropdown {
     display: block; /* Muestra la lista desplegable al pasar el ratón por encima del botón */
-} 
+}
