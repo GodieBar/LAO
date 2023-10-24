@@ -267,3 +267,6 @@ body {
 .menu-toggle:hover .dropdown {
     display: block; /* Muestra la lista desplegable al pasar el ratón por encima del botón */
 }
+.section-title {
+    text-align: center;
+}
