@@ -281,3 +281,27 @@ body {
     justify-content: center;
     height: 30vh;
 }
+/* Estilos específicos para centrar el texto en los elementos Servidor, Foro de Servidor y Login */
+
+/* Centra el título de la sección Servidores */
+.content h1:first-child {
+    text-align: center;
+}
+
+/* Centra el título de la sección Foro de Servidor */
+.content h1:nth-child(3) {
+    text-align: center;
+}
+
+/* Centra el título de la sección Registro */
+.content h1:last-child {
+    text-align: center;
+}
+/* Reduce la distancia vertical entre elementos en las secciones Servidores, Foro de Servidor y Login */
+.content h1:first-child,
+.content h1:nth-child(3),
+.content h1:last-child {
+    text-align: center;
+    margin-top: 10px; /* Ajusta el margen superior según tus preferencias */
+    margin-bottom: 10px; /* Ajusta el margen inferior según tus preferencias */
+}
