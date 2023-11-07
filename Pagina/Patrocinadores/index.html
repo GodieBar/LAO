@@ -2,39 +2,47 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <!-- Asegura que la página sea responsive en diferentes dispositivos -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Cocina</title>
+    <!-- Vincula el archivo de estilos CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- CABECERA: Contiene el título y la navegación de la página -->
     <header class="header">
         <div class="container">
+            <!-- Botón de menú tipo hamburguesa que al hacer clic ejecuta toggleMenu() para mostrar u ocultar el menú -->
             <button class="menu-toggle" onclick="toggleMenu()">🥷</button>
+            <!-- Título principal de la página -->
             <h1 class="main-title">La Cocina</h1>
+            <!-- Navegación principal -->
             <nav class="main-nav">         
+                <!-- Menú desplegable que se muestra/oculta al hacer clic en el botón del menú -->
                 <ul class="dropdown" id="myDropdown">
                     <li><a href="https://GodieBar.github.io" aria-label="Contacto">Contacto</a></li>
-                        <li><a href="https://GodieBar.github.io" aria-label="Compras">Compras</a></li>
-                        <li><a href="https://GodieBar.github.io" aria-label="Intercambios">Intercambios</a></li>
-                    </ul>                                    
-                </div>         
-                <nav class="main-nav">         
-                    <ul class="options">
-                        <li><a href="https://GodieBar.github.io" class="button" aria-label="Inicio">Inicio</a></li>
-                        <li><a class="button" href="https://godiebar.github.io/Pagina/Patrocinadores/index.html" class="menu-link">Patrocinadores</a></li>
-                        <li><a class="button" href="https://godiebar.github.io/Pagina/Apuestas/index.html" class="menu-link">Apuestas</a></li>
-                        <li><a class="button" href="https://godiebar.github.io/Pagina/Eventos/index.html" class="menu-link">Eventos</a></li>
-                    </ul> 
-                </nav>
-                <nav class="main-nav">
-                    <ul class="options">
-                        <li><a class="button" href="https://godiebar.github.io/Pagina/Donadores/Index.html" aria-label="Donaciones">Donaciones</a></li>
-                        <li><a class="button" href="https://www.youtube.com/channel/UCYJVIMdfxTMVSiI8zSc5FzA" target="_blank" aria-label="Youtube">Youtube</a></li>
-                        <li><a class="button" href="https://discord.gg/wB5nwnzBRH" target="_blank" aria-label="Discord">Discord</a></li>
-                        <li><a class="button" href="https://godiebar.github.io/Pagina/Mision y Vision/index.html" class="menu-link">Mision y Vision</a></li>
-                    </ul>
-                </nav>
-            </div>
+                    <li><a href="https://GodieBar.github.io" aria-label="Compras">Compras</a></li>
+                    <li><a href="https://GodieBar.github.io" aria-label="Intercambios">Intercambios</a></li>
+                </ul>                                    
+            </nav>
+            <!-- Otros enlaces de navegación -->
+            <nav class="main-nav">         
+                <ul class="options">
+                    <li><a href="https://GodieBar.github.io" class="button" aria-label="Inicio">Inicio</a></li>
+                    <li><a class="button" href="https://godiebar.github.io/Pagina/Patrocinadores/index.html" aria-label="Patrocinadores">Patrocinadores</a></li>
+                    <li><a class="button" href="https://godiebar.github.io/Pagina/Apuestas/index.html" aria-label="Apuestas">Apuestas</a></li>
+                    <li><a class="button" href="https://godiebar.github.io/Pagina/Eventos/index.html" aria-label="Eventos">Eventos</a></li>
+                </ul> 
+            </nav>
+            <!-- Más enlaces de navegación -->
+            <nav class="main-nav">
+                <ul class="options">
+                    <li><a class="button" href="https://godiebar.github.io/Pagina/Donadores/Index.html" aria-label="Donaciones">Donaciones</a></li>
+                    <li><a class="button" href="https://www.youtube.com/channel/UCYJVIMdfxTMVSiI8zSc5FzA" target="_blank" aria-label="Youtube">Youtube</a></li>
+                    <li><a class="button" href="https://discord.gg/wB5nwnzBRH" target="_blank" aria-label="Discord">Discord</a></li>
+                    <li><a class="button" href="https://godiebar.github.io/Pagina/Mision y Vision/index.html" aria-label="Mision y Vision">Mision y Vision</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
