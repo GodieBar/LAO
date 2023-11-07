@@ -2,59 +2,76 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <!-- Asegura que la página sea responsive en diferentes dispositivos -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Cocina</title>
+    <!-- Vincula el archivo de estilos CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- CABECERA: Contiene el título y la navegación de la página -->
     <header class="header">
         <div class="container">
+            <!-- Botón de menú tipo hamburguesa que al hacer clic ejecuta toggleMenu() para mostrar u ocultar el menú -->
             <button class="menu-toggle" onclick="toggleMenu()">🥷</button>
+            <!-- Título principal de la página -->
             <h1 class="main-title">La Cocina</h1>
+            <!-- Navegación principal -->
             <nav class="main-nav">         
+                <!-- Menú desplegable que se muestra/oculta al hacer clic en el botón del menú -->
                 <ul class="dropdown" id="myDropdown">
                     <li><a href="https://GodieBar.github.io" aria-label="Contacto">Contacto</a></li>
-                        <li><a href="https://GodieBar.github.io" aria-label="Compras">Compras</a></li>
-                        <li><a href="https://GodieBar.github.io" aria-label="Intercambios">Intercambios</a></li>
-                    </ul>                                    
-                </div>         
-                <nav class="main-nav">         
-                    <ul class="options">
-                        <li><a href="https://GodieBar.github.io" class="button" aria-label="Inicio">Inicio</a></li>
-                        <li><a class="button" href="https://godiebar.github.io/Pagina/Patrocinadores/index.html" class="menu-link">Patrocinadores</a></li>
-                        <li><a class="button" href="https://godiebar.github.io/Pagina/Apuestas/index.html" class="menu-link">Apuestas</a></li>
-                        <li><a class="button" href="https://godiebar.github.io/Pagina/Eventos/index.html" class="menu-link">Eventos</a></li>
-                    </ul> 
-                </nav>
-                <nav class="main-nav">
-                    <ul class="options">
-                        <li><a class="button" href="https://godiebar.github.io/Pagina/Donadores/Index.html" aria-label="Donaciones">Donaciones</a></li>
-                        <li><a class="button" href="https://www.youtube.com/channel/UCYJVIMdfxTMVSiI8zSc5FzA" target="_blank" aria-label="Youtube">Youtube</a></li>
-                        <li><a class="button" href="https://discord.gg/wB5nwnzBRH" target="_blank" aria-label="Discord">Discord</a></li>
-                        <li><a class="button" href="https://godiebar.github.io/Pagina/Mision y Vision/index.html" class="menu-link">Mision y Vision</a></li>
-                    </ul>
-                </nav>
-            </div>
+                    <li><a href="https://GodieBar.github.io" aria-label="Compras">Compras</a></li>
+                    <li><a href="https://GodieBar.github.io" aria-label="Intercambios">Intercambios</a></li>
+                </ul>                                    
+            </nav>
+            <!-- Otros enlaces de navegación -->
+            <nav class="main-nav">         
+                <ul class="options">
+                    <li><a href="https://GodieBar.github.io" class="button" aria-label="Inicio">Inicio</a></li>
+                    <li><a class="button" href="https://godiebar.github.io/Pagina/Patrocinadores/index.html" aria-label="Patrocinadores">Patrocinadores</a></li>
+                    <li><a class="button" href="https://godiebar.github.io/Pagina/Apuestas/index.html" aria-label="Apuestas">Apuestas</a></li>
+                    <li><a class="button" href="https://godiebar.github.io/Pagina/Eventos/index.html" aria-label="Eventos">Eventos</a></li>
+                </ul> 
+            </nav>
+            <!-- Más enlaces de navegación -->
+            <nav class="main-nav">
+                <ul class="options">
+                    <li><a class="button" href="https://godiebar.github.io/Pagina/Donadores/Index.html" aria-label="Donaciones">Donaciones</a></li>
+                    <li><a class="button" href="https://www.youtube.com/channel/UCYJVIMdfxTMVSiI8zSc5FzA" target="_blank" aria-label="Youtube">Youtube</a></li>
+                    <li><a class="button" href="https://discord.gg/wB5nwnzBRH" target="_blank" aria-label="Discord">Discord</a></li>
+                    <li><a class="button" href="https://godiebar.github.io/Pagina/Mision y Vision/index.html" aria-label="Mision y Vision">Mision y Vision</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
+    <!-- Sección principal que contiene el contenido del sitio web -->
     <main>
+        <!-- Sección de servidores con información relevante -->
         <section class="section">
             <div class="container">
+                <!-- Título de la sección -->
                 <h1 class="section-title">Servidores</h1>
+                <!-- Contenedor de columnas para los servidores -->
                 <div class="columns">
+                    <!-- Columna individual para un servidor específico -->
                     <article class="column" style="background-image: url('/subcarpetas/Imagenes/2.gif');">
                         <h2 class="column-title">Proyecto Mila</h2>
                         <p class="column-text">Servidor de proyecto mila.</p>
+                        <!-- Botón para acceder al servidor -->
                         <a href="#" class="button" target="_blank" aria-label="Servidor">Servidor</a>
                     </article>
+                    <!-- Otra columna para otro servidor -->
                     <article class="column" style="background-image: url('/subcarpetas/Imagenes/1.gif');">
                         <h2 class="column-title">Araboth</h2>
                         <p class="column-text">Servidor de Araboth.</p>
+                        <!-- Botón para acceder al servidor -->
                         <a href="#" class="button" target="_blank" aria-label="Servidor">Servidor</a>
                     </article>
                 </div>
             </div>
         </section>
+        <!-- Sección de foros para los servidores -->
         <section class="section">
             <div class="container">
                 <h1 class="section-title">Foros de los Servidores</h1>
@@ -62,46 +79,58 @@
                     <article class="column" style="background-image: url('/subcarpetas/Imagenes/3.gif');">
                         <h2 class="column-title">Foro Proyecto Mila</h2>
                         <p class="column-text">Foro.</p>
+                        <!-- Botón para acceder al foro -->
                         <a href="#" target="_blank" class="button" aria-label="Foro">Foro</a>
                     </article>
                     <article class="column" style="background-image: url('/subcarpetas/Imagenes/4.gif');">
                         <h2 class="column-title">Foro Araboth</h2>
                         <p class="column-text">Foro.</p>
-                        <a href="#" class="button" target="_blank"aria-label="Foro">Foro</a>
+                        <!-- Botón para acceder al foro -->
+                        <a href="#" class="button" target="_blank" aria-label="Foro">Foro</a>
                     </article>
                 </div>
             </div>
         </section>
-    <div class="content">
-        <div class="container">
-            <h1>Registro</h1>
-            <section class="columns">
-                <article class="column" style="background-image: url('subcarpetas/Imagenes/la-cocina.jpg');">
-                    <h2 class="column-title">Roleador</h2>
-                    <p class="column-text">¡Únete a nosotros!</p>
-                    <a href="#" target="_blank" class="button" aria-label="Iniciar Sesión o Registrarse">Iniciar Sesión o Registrarse</a>
-                </article>
-                <article class="column" style="background-image: url('subcarpetas/Imagenes/la-cocina.jpg');">
-                    <h2 class="column-title">Visitante</h2>
-                    <p class="column-text">Si vienes por algo más que Roleplay.</p>
-                    <a href="#" class="button" target="_blank" aria-label="Ver más información">Ver más información</a>
-                </article>
-            </section>
+        <!-- Sección para el registro de usuarios -->
+        <div class="content">
+            <div class="container">
+                <h1>Registro</h1>
+                <section class="columns">
+                    <article class="column" style="background-image: url('subcarpetas/Imagenes/la-cocina.jpg');">
+                        <h2 class="column-title">Roleador</h2>
+                        <p class="column-text">¡Únete a nosotros!</p>
+                        <!-- Botón para iniciar sesión o registrarse -->
+                        <a href="#" target="_blank" class="button" aria-label="Iniciar Sesión o Registrarse">Iniciar Sesión o Registrarse</a>
+                    </article>
+                    <article class="column" style="background-image: url('subcarpetas/Imagenes/la-cocina.jpg');">
+                        <h2 class="column-title">Visitante</h2>
+                        <p class="column-text">Si vienes por algo más que Roleplay.</p>
+                        <!-- Botón para obtener más información -->
+                        <a href="#" class="button" target="_blank" aria-label="Ver más información">Ver más información</a>
+                    </article>
+                </section>
+            </div>
         </div>
-    </div>
-</main>
+    </main>
+    <!-- PIE DE PÁGINA: Contiene información de derechos de autor y otros datos relevantes al final de la página -->
     <footer>
         <div class="container">
+            <!-- Texto de derechos de autor -->
             <p>&copy; 2023 Patrocinadores y Colaboradores de La Cocina. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <!-- MODAL: Elemento que se muestra u oculta para proporcionar información adicional o acciones -->
     <div id="myModal" class="modal">
+        <!-- Contenido interno del modal -->
         <div class="modal-content">
+            <!-- Botón para cerrar el modal -->
             <span class="close" onclick="cerrarModal()">&times;</span>
+            <!-- Título y contenido que se puede llenar con información dinámica -->
             <h2 class="modal-title"></h2>
             <p class="modal-content"></p>
         </div>
     </div>
+    <!-- Enlace al archivo de JavaScript que contiene la lógica de interacción -->
     <script src="script.js"></script>
 </body>
 </html>
