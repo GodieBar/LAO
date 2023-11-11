@@ -53,3 +53,16 @@ body, html {
         align-items: center;
     }
 }
+/* Cambiar el fondo a negro o un tono oscuro */
+body.hacker-theme {
+    background-color: #000;
+    color: #00FF00; /* Color de texto verde en la terminal */
+}
+
+/* Estilo para el título principal */
+.main-title.hacker-text {
+    font-family: "Courier New", monospace; /* Usar una fuente de terminal */
+    font-size: 36px;
+}
+
+/* Otras modificaciones relacionadas con la temática hacker */
