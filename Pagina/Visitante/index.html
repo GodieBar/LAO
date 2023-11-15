@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <!-- Asegura que la página sea responsive en diferentes dispositivos -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Login</title>
     <!-- Vincula el archivo de estilos CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<!-- Formulario de inicio de sesión para Visitantes -->
-<div id="loginVisitanteModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="cerrarModal('loginVisitanteModal')">&times;</span>
-        <h2>Iniciar Sesión - Visitante</h2>
-        <form id="loginVisitanteForm">
-            <label for="visitanteUsername">Usuario:</label>
-            <input type="text" id="visitanteUsername" name="username" required>
+<body>
+    <!-- Formulario de inicio de sesión para Visitantes -->
+    <div id="loginVisitanteModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal('loginVisitanteModal')">&times;</span>
+            <h2>Iniciar Sesión - Visitante</h2>
+            <!-- Agrega el formulario con el atributo action -->
+            <form id="loginVisitanteForm" method="post" action="login.php">
+                <label for="visitanteUsername">Usuario:</label>
+                <input type="text" id="visitanteUsername" name="username" required>
 
-            <label for="visitantePassword">Contraseña:</label>
-            <input type="password" id="visitantePassword" name="password" required>
+                <label for="visitantePassword">Contraseña:</label>
+                <input type="password" id="visitantePassword" name="password" required>
 
-            <input type="submit" value="Iniciar Sesión">
-        </form>
+                <input type="submit" value="Iniciar Sesión">
+            </form>
+            <!-- Fin del formulario -->
+        </div>
     </div>
-</div>
+</body>
+</html>
