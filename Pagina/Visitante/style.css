@@ -53,6 +53,7 @@ body, html {
         align-items: center;
     }
 }
+
 /* Cambiar el fondo a negro o un tono oscuro */
 body.hacker-theme {
     background-color: #000;
