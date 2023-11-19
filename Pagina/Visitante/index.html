@@ -2,30 +2,35 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <!-- Asegura que la página sea responsive en diferentes dispositivos -->
+    <!-- Ensure responsiveness on different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Login</title>
-    <!-- Vincula el archivo de estilos CSS -->
+    <title>Login - Visitante</title>
+    <!-- Link to the CSS stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Formulario de inicio de sesión para Visitantes -->
+    <!-- Modal for Visitante Login Form -->
     <div id="loginVisitanteModal" class="modal">
         <div class="modal-content">
+            <!-- Close button for the modal -->
             <span class="close" onclick="cerrarModal('loginVisitanteModal')">&times;</span>
+            
+            <!-- Login form for Visitante -->
             <h2>Iniciar Sesión - Visitante</h2>
-            <!-- Formulario de inicio de sesión -->
             <form id="loginVisitanteForm" method="post" action="login.php">
+                <!-- Username input -->
                 <label for="visitanteUsername">Usuario:</label>
                 <input type="text" id="visitanteUsername" name="username" required>
 
+                <!-- Password input -->
                 <label for="visitantePassword">Contraseña:</label>
                 <input type="password" id="visitantePassword" name="password" required>
 
+                <!-- Submit button -->
                 <input type="submit" value="Iniciar Sesión">
             </form>
-            <!-- Fin del formulario de inicio de sesión -->
+            <!-- End of the login form -->
         </div>
     </div>
 </body>
