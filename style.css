@@ -144,3 +144,16 @@ body, html {
 .dropdown li:hover {
     background-color: var(--primary-color);
 }
+.menu-toggle {
+    background: none;
+    border: none;
+    padding: 10px; /* Ajusta el padding para hacer el botón más grande */
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 100%; /* La imagen ocupará el 100% del ancho del botón */
+    height: auto; /* La altura se ajustará automáticamente para mantener las proporciones originales */
+    display: block; /* Ajusta el display a block para centrar verticalmente la imagen */
+    margin: 0 auto; /* Centra horizontalmente la imagen dentro del botón */
+}
