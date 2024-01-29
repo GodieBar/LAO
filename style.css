@@ -157,8 +157,8 @@ body, html {
 }
 
 .menu-icon {
-    width: 100%; /* La imagen ocupará el 100% del ancho del botón */
+    width: 150px; /* Ajusta el ancho según tus necesidades */
     height: auto; /* La altura se ajustará automáticamente para mantener las proporciones originales */
-    display: block; /* Ajusta el display a block para centrar verticalmente la imagen */
-    margin: 0 auto; /* Centra horizontalmente la imagen dentro del botón */
+    display: inline-block; /* Asegura que la imagen no afecte el diseño del botón */
+    vertical-align: middle; /* Centra verticalmente la imagen dentro del botón */
 }
