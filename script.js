@@ -17,7 +17,7 @@ function toggleMenu() {
 function cerrarModal() {
     // Seleccionamos el modal por su ID
     var modal = document.getElementById("myModal");
-    
+
     // Establecemos la propiedad de visualización en 'none' para ocultarlo
     modal.style.display = "none";
 }
@@ -34,7 +34,7 @@ window.onclick = function(event) {
             dropdown.style.display = "none";
         }
     }
-}
+};
 
 // Esperamos a que el contenido de la página se cargue completamente
 document.addEventListener("DOMContentLoaded", function () {
