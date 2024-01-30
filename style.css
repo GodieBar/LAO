@@ -13,10 +13,15 @@ body, html {
     font-family: Arial, sans-serif;
     color: var(--text-color);
     background-color: var(--background-color);
+    transition: background-color 0.3s; /* Agregada transición de color de fondo para todo el cuerpo */
+}
+
+body:hover {
+    background-color: #A52A2A; /* Nuevo color de fondo al pasar el ratón */
 }
 
 .container {
-    max-width: 800px; /* Ajusta el ancho máximo del contenedor */
+    max-width: 800px;
     margin: auto;
     padding: 20px;
 }
@@ -48,10 +53,10 @@ body, html {
     text-decoration: none;
     color: var(--text-color);
     display: block;
-    padding: 15px; /* Ajusta el padding para hacer los enlaces más grandes */
+    padding: 15px;
     transition: color 0.3s, background-color 0.3s;
     border-radius: 8px;
-    font-size: 18px; /* Ajusta el tamaño del texto */
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -63,9 +68,9 @@ body, html {
 .button {
     background-color: var(--primary-color);
     transition: background-color 0.3s;
-    padding: 15px; /* Ajusta el padding para hacer los botones más grandes */
+    padding: 15px;
     border-radius: 8px;
-    font-size: 18px; /* Ajusta el tamaño del texto */
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -112,7 +117,7 @@ body, html {
     font-size: 30px;
     margin: 10px;
     border: 2px solid var(--text-color);
-    padding: 15px; /* Ajusta el padding para hacer el botón más grande */
+    padding: 15px;
     border-radius: 8px;
     transition: background-color 0.2s, color 0.2s;
 }
@@ -152,13 +157,57 @@ body, html {
 .menu-toggle {
     background: none;
     border: none;
-    padding: 15px; /* Ajusta el padding para hacer el botón más grande */
+    padding: 15px;
     cursor: pointer;
 }
 
 .menu-icon {
-    width: 150px; /* Ajusta el ancho según tus necesidades */
-    height: auto; /* La altura se ajustará automáticamente para mantener las proporciones originales */
-    display: inline-block; /* Asegura que la imagen no afecte el diseño del botón */
-    vertical-align: middle; /* Centra verticalmente la imagen dentro del botón */
+    width: 150px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
 }
+:root {
+    --primary-color: #800000;
+    --hover-color: #A52A2A;
+    --background-color: #000;
+    --text-color: #fff;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --hover-shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    overflow: hidden; /* Para que la animación de fondo no afecte el diseño */
+}
+
+/* Animación de fondo */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    background: linear-gradient(270deg, #000, #A52A2A, #000);
+    background-size: 600% 600%;
+    animation: gradientAnimation 15s ease infinite; /* Ajusta la duración según tus preferencias */
+    transition: background-color 0.3s;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Resto del código permanece igual */
