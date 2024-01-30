@@ -14,7 +14,7 @@
         <div class="container">
             <!-- Botón de menú tipo hamburguesa que al hacer clic ejecuta toggleMenu() para mostrar u ocultar el menú -->
             <button class="menu-toggle" onclick="toggleMenu()">
-                <img src="subcarpetas/Imagenes/LAO.jpg" alt="Icono personalizado" class="menu-icon">
+                <img src="subcarpetas/Imagenes/LAO.jpg" alt="Icono personalizado" class="menu-icon button">
             </button>
             <!-- Navegación principal -->
             <nav class="main-nav">         
@@ -26,6 +26,7 @@
                     <li><a href="https://GodieBar.github.io" class="button" aria-label="Inicio">Inicio</a></li>
                     <li><a class="button" href="https://godiebar.github.io/Pagina/Donadores/Index.html" aria-label="Donaciones">Donaciones</a></li>
                 </ul>                                    
+            </nav>
         </div>
     </header>
     <!-- Sección principal que contiene el contenido del sitio web -->
@@ -34,23 +35,21 @@
         <div class="content">
             <div class="container">
                 <section class="columns">
-                    <article class="column" style="background-image: url('subcarpetas/Imagenes/tienda.png');">
+                    <article class="column" style="background-image: url('subcarpetas/Imagenes/tienda.png'); background-size: 320px 100px;">
                         <!-- Botón para obtener más información -->
-                        <a class="button" href="https://GodieBar.github.io/Pagina/Tienda/index.html" target="_blank"></a>
+                        <img src="subcarpetas/Imagenes/tienda.png" alt="Botón de Tienda" class="button" onclick="window.location.href='GodieBar.github.io/Pagina/Tienda/index.html'">
                     </article>
                 </section>
             </div>
         </div>
-    </main>
-    
-    <main>
+
         <!-- Sección para el registro de usuarios -->
         <div class="content">
             <div class="container">
                 <section class="columns">
-                    <article class="column" style="background-image: url('subcarpetas/Imagenes/siguenos.png');">
+                    <article class="column" style="background-image: url('subcarpetas/Imagenes/siguenos.png'); background-size: 320px 100px;">
                         <!-- Botón para obtener más información -->
-                        <a class="button" href="https://GodieBar.github.io/Pagina/Redes/index.html" target="_blank"></a>
+                        <img src="subcarpetas/Imagenes/siguenos.png" alt="Botón de Síguenos" class="button" onclick="window.location.href='GodieBar.github.io/Pagina/Redes/index.html'">
                     </article>
                 </section>  
             </div>
@@ -61,7 +60,7 @@
     <footer>
         <div class="container">
             <!-- Texto de derechos de autor -->
-            <p>&copy; 2024 Godi. Todos los derechos reservados (imagenes y codigo uso libre).</p>
+            <p>&copy; 2024 Godi. Todos los derechos reservados (imágenes y código de uso libre).</p>
         </div>
     </footer>
     <!-- MODAL: Elemento que se muestra u oculta para proporcionar información adicional o acciones -->
