@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #800000;
-    --hover-color: #A52A2A;
+    --primary-color: #07d600bb;
+    --hover-color: #003605;
     --background-color: #000;
     --text-color: #fff;
     --shadow-color: rgba(0, 0, 0, 0.2);
@@ -29,7 +29,7 @@ body, html {
 }
 
 body {
-    background: linear-gradient(270deg, #000, #A52A2A, #000);
+    background: linear-gradient(270deg, #000, #33c940, #000);
     background-size: 600% 600%;
     animation: gradientAnimation 15s ease infinite; /* Ajusta la duración según tus preferencias */
     transition: background-color 0.3s;
