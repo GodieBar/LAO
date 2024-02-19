@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Persona</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <button class="menu-toggle" onclick="toggleMenu()">🥷</button>
+            <h1 class="main-title">Redes Sociales De Godi</h1>
+            <nav class="main-nav">
+                <ul class="dropdown" id="myDropdown">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">instagram</a></li>
+                    <li><a href="#">Grupo Discord</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Acerca de Godi</h1>
+                <div class="columns">
+                    <article class="column" style="background-image: url('/subcarpetas/Imagenes/foto.jpg');">
+                        <h2 class="column-title">Detras del Apodo</h2>
+                        <p class="column-text">Nombre Diego Barbosa, estudio las IT (information technology), las criptomonedas y los negocios</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Proyectos</h1>
+                <div class="columns">
+                    <article class="column" style="background-image: url('/subcarpetas/Imagenes/logros.jpg');">
+                        <h2 class="column-title">Tecnico en soporte y mantenimiento</h2>
+                        <h2 class="column-title"> Diseñar paginas web </h2>
+                        <h2 class="column-title"> Empresa de Seguridad, Ciberseguridad y servicio especial</h2>
+                        <p class="column-text">Proyectos de Godi</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Apoyo y Donaciones</h1>
+                <div class="columns">
+                    <article class="column" style="background-image: url('/subcarpetas/Imagenes/habilidades.jpg');">
+                        <h2 class="column-title">El apoyo y las Donaciones</h2>
+                        <p class="column-text">Seran invertidas el dinero obtenido para el desarrollo de los proyectos.</p>
+                        <h2 class="section-title">Nequi</h2>
+                        <img src="/subcarpetas/Imagenes/Nequi.jpg" alt="Codigo QR del Nequi" width="300">
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Perfil de [Nombre de la Persona]. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <h2 class="modal-title"></h2>
+            <p class="modal-content"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
