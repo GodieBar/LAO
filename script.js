@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Verifica la carga de la imagen y detiene la animación después de 4 segundos
     var stopAnimationImage = document.querySelector('.stop-animation');
-    
+
     if (stopAnimationImage) {
         stopAnimationImage.onload = function () {
             setTimeout(function () {
@@ -61,8 +61,36 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     console.log('DOM cargado correctamente en Android');
+
+    // Obtén el cubo y las caras
+    const cube = document.getElementById('cube');
+    const faces = document.querySelectorAll('.face');
+    let currentFace = 0; // Inicia en la primera cara
+
+    // Función para cambiar la cara del cubo
+    function changeFace(direction) {
+        if (direction === 'left') {
+            currentFace = (currentFace - 1 + faces.length) % faces.length;
+        } else if (direction === 'right') {
+            currentFace = (currentFace + 1) % faces.length;
+        }
+
+        faces.forEach((face, index) => {
+            face.style.transform = `rotateY(${90 * (index - currentFace)}deg)`;
+        });
+    }
+
+    // Asigna la función changeFace a los botones izquierdo y derecho
+    document.getElementById('btnLeft').addEventListener('click', function () {
+        changeFace('left');
+    });
+
+    document.getElementById('btnRight').addEventListener('click', function () {
+        changeFace('right');
+    });
+
+    // Escucha clics en el cubo para cambiar la cara manualmente
+    cube.addEventListener('click', function () {
+        changeFace('right');
+    });
 });
-// Ajusta la altura y el ancho del cubo
-const cube = document.getElementById('cube');
-cube.style.width = '150px'; // Cambia esto según tus necesidades
-cube.style.height = '150px'; // Cambia esto según tus necesidades

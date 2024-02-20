@@ -12,39 +12,31 @@
             <div class="container">
                 <button class="menu-toggle" onclick="toggleMenu()">🥷</button>
                 <nav class="main-nav">
+                    <button onclick="changeFace('left')">◀️</button>
                     <div class="menu-icon-container">
                         <div class="cube-container" id="cube">
-                            <div class="cube">
-                                <!-- ... (tu código HTML) ... -->
-                                <div class="cube" id="cube">
-                                    <div class="face" id="face1">
-                                        <img src="subcarpetas/Imagenes/LAO.jpg" alt="Icono personalizado" class="menu-icon button">
-                                    </div>
-                                    <div class="face" id="face2">
-                                        <img src="subcarpetas/Imagenes/LAO.jpg" alt="Icono personalizado" class="menu-icon button">
-                                    </div>
-                                    <div class="face" id="face3">
-                                        <img src="subcarpetas/Imagenes/LAO.jpg" alt="Icono personalizado" class="menu-icon button">
-                                    </div>
-                                    <div class="face" id="face4">
-                                        <img src="subcarpetas/Imagenes/LAO.jpg" alt="Icono personalizado" class="menu-icon button">
-                                    </div>
+                            <div class="cube" id="cube">
+                                <div class="face" id="face1">
+                                    <img src="subcarpetas/Imagenes/LAO.jpg" alt="Icono personalizado" class="menu-icon button">
                                 </div>
-                                <!-- ... (resto de tu código HTML) ... -->
-
+                                <div class="face" id="face2">
+                                    <img src="subcarpetas/Imagenes/LAO.jpg" alt="Icono personalizado" class="menu-icon button">
+                                </div>
+                                <div class="face" id="face3">
+                                    <img src="subcarpetas/Imagenes/LAO.jpg" alt="Icono personalizado" class="menu-icon button">
+                                </div>
+                                <div class="face" id="face4">
+                                    <img src="subcarpetas/Imagenes/LAO.jpg" alt="Icono personalizado" class="menu-icon button">
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- Resto del código del menú -->
                     <ul class="dropdown" id="myDropdown" class="butom">
                         <li><a href="https://discord.gg/wB5nwnzBRH" target="_blank" aria-label="Discord">Discord</a></li>
-                        <li><a href="https://www.youtube.com/channel/UCYJVIMdfxTMVSiI8zSc5FzA" target="_blank" aria-label="Youtube">Youtube</a></li>
-                        <li><a class="button" href="https://godiebar.github.io/Pagina/Patrocinadores/index.html" aria-label="Patrocinadores">Patrocinadores</a></li>
-                        <li><a href="https://GodieBar.github.io" class="button" aria-label="Inicio">Inicio</a></li>
-                        <li><a class="button" href="https://godiebar.github.io/Pagina/Donadores/Index.html" aria-label="Donaciones">Donaciones</a></li>
                     </ul>
-                </nav>
-            </div>
+                    <button onclick="changeFace('right')">▶️</button>
+                    
         </header>
         
         <main>
