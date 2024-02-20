@@ -34,3 +34,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 });
+document.addEventListener("DOMContentLoaded", function () {
+    var stopAnimationImage = document.querySelector('.stop-animation');
+
+    stopAnimationImage.onload = function () {
+        setTimeout(function () {
+            stopAnimationImage.style.animation = 'none'; // Elimina la animación
+        }, 4000);
+    };
+
+    // Resto del código...
+});

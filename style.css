@@ -223,3 +223,17 @@ body {
 }
 
 /* Resto del código permanece igual */
+.menu-toggle {
+    /* ... otras propiedades ... */
+    transform-style: preserve-3d; /* Añade perspectiva 3D al botón */
+}
+
+.menu-icon {
+    /* ... otras propiedades ... */
+    border-radius: 8px;
+    transition: transform 0.3s; /* Añade transición al efecto 3D */
+}
+
+.menu-icon:hover {
+    transform: perspective(100px) rotateX(15deg); /* Aplica perspectiva 3D al pasar el ratón */
+}
