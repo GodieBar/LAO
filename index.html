@@ -2,61 +2,54 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <!-- Asegura que la página sea responsive en diferentes dispositivos -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Godi</title>
-    <!-- Vincula el archivo de estilos CSS -->
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
-    <!-- CABECERA: Contiene el título y la navegación de la página -->
     <header class="header">
         <div class="container">
-            <!-- Botón de menú tipo hamburguesa que al hacer clic ejecuta toggleMenu() para mostrar u ocultar el menú -->
             <button class="menu-toggle" onclick="toggleMenu()">🥷</button>
             <img src="subcarpetas/Imagenes/LAO.jpg" alt="Icono personalizado" class="menu-icon button">
-            </button>
             <nav class="main-nav">
                 <ul class="dropdown" id="myDropdown">
                     <li><a href="https://discord.gg/wB5nwnzBRH" target="_blank" aria-label="Discord">Discord</a></li>
                     <li><a href="https://www.youtube.com/channel/UCYJVIMdfxTMVSiI8zSc5FzA" target="_blank" aria-label="Youtube">Youtube</a></li>
-                    <li><a class="button" href="godiebar.github.io/Pagina/Patrocinadores/index.html" aria-label="Patrocinadores">Patrocinadores</a></li>
+                    <li><a class="button" href="https://godiebar.github.io/Pagina/Patrocinadores/index.html" aria-label="Patrocinadores">Patrocinadores</a></li>
                     <li><a href="https://GodieBar.github.io" class="button" aria-label="Inicio">Inicio</a></li>
                     <li><a class="button" href="https://godiebar.github.io/Pagina/Donadores/Index.html" aria-label="Donaciones">Donaciones</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+    
     <main>
-        <!-- Sección 1 -->
         <div class="content">
             <div class="container">
                 <section class="columns">
                     <article class="column" style="background-image: url('subcarpetas/Imagenes/tienda.png');">
-                        <img src="subcarpetas/Imagenes/Tienda (2).gif" alt="Botón de Tienda" class="button" onclick="window.location.href='GodieBar.github.io/Pagina/Tienda/index.html'">
+                        <img src="subcarpetas/Imagenes/Tienda (2).gif" alt="Botón de Tienda" class="button" onclick="window.location.href='https://GodieBar.github.io/Pagina/Tienda/index.html'">
                     </article>
                     <article class="column" style="background-image: url('subcarpetas/Imagenes/siguenos.png');">
-                        <img src="subcarpetas/Imagenes/siguenos.gif" alt="Botón de Síguenos" class="button" onclick="window.location.href='GodieBar.github.io/Pagina/Redes/index.html'">
+                        <img src="subcarpetas/Imagenes/siguenos.gif" alt="Botón de Síguenos" class="button" onclick="window.location.href='https://GodieBar.github.io/Pagina/Redes/index.html'">
                     </article>
                 </section>
             </div>
         </div>
-<!-- Sección 2 -->
-    <div class="content">
-        <div class="container">
-            <section class="columns">
-                <!-- Agrega un nuevo artículo con el logo adicional -->
-                <article class="column">
-                    <video width="900" height="600" autoplay muted>
-                        <source src="subcarpetas/Imagenes/LAO.mp4" type="video/mp4">
-                        Tu navegador no soporta el tag de video.
-                    </video>
-                </article>
-            </section>
+
+        <div class="content">
+            <div class="container">
+                <section class="columns">
+                    <article class="column">
+                        <video width="900" height="600" autoplay muted loop>
+                            <source src="subcarpetas/Imagenes/LAO.mp4" type="video/mp4">
+                            Tu navegador no soporta el tag de video.
+                        </video>
+                    </article>
+                </section>
+            </div>
         </div>
-    </div>
-        <!-- Sección 3 -->
+
         <div class="content">
             <div class="container">
                 <section class="columns">
@@ -64,18 +57,27 @@
                         <img src="subcarpetas/Imagenes/foro.gif" alt="Botón de Foro" class="button" onclick="window.location.href='//aca va la pagina del foro cuando lo cree'">
                     </article>
                     <article class="column" style="background-image: url('subcarpetas/Imagenes/Discord.png');">
-                        <img src="subcarpetas/Imagenes/Discord.gif" alt="Botón de Discord" class="button" onclick="window.location.href='https:discord.gg/r5vuNrND8m'">
+                        <img src="subcarpetas/Imagenes/Discord.gif" alt="Botón de Discord" class="button" onclick="window.location.href='https://discord.gg/r5vuNrND8m'">
                     </article>
                 </section>
             </div>
         </div>
     </main>
-    <footer>    
+
+    <footer>
+        <div class="container">
             <p>&copy; 2024 Godi. Todos los derechos reservados (imágenes y código de uso libre).</p>
         </div>
     </footer>
+
     <div id="myModal" class="modal">
         <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <h2 class="modal-title"></h2>
+            <p class="modal-content"></p>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
