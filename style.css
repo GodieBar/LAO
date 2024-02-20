@@ -237,3 +237,7 @@ body {
 .menu-icon:hover {
     transform: perspective(100px) rotateX(15deg); /* Aplica perspectiva 3D al pasar el ratón */
 }
+.page-container {
+    min-height: 100vh; /* Establece la altura mínima al 100% de la altura de la ventana */
+    overflow: auto;   /* Agrega desplazamiento si el contenido es más alto que la ventana */
+}
