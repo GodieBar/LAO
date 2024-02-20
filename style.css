@@ -187,4 +187,16 @@ body {
     vertical-align: middle;
 }
 
+.stop-animation {
+    background-image: url('subcarpetas/Imagenes/LAOYCUERVOS.gif');
+    background-size: cover;
+    animation: stopAnimation 1ms forwards; /* Modificado para detener la animación después de 4 segundos */
+}
+
+@keyframes stopAnimation {
+    to {
+        background-position: 100%;
+    }
+}
+
 /* Resto del código permanece igual */
