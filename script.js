@@ -62,3 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     console.log('DOM cargado correctamente en Android');
 });
+// Ajusta la altura y el ancho del cubo
+const cube = document.getElementById('cube');
+cube.style.width = '150px'; // Cambia esto según tus necesidades
+cube.style.height = '150px'; // Cambia esto según tus necesidades
