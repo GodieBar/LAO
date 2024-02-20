@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <!-- Ensure responsiveness on different devices -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <title>Register</title>
-        <!-- Link to the CSS stylesheet -->
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <button class="menu-toggle" onclick="toggleMenu()">🥷</button>
+            <nav class="main-nav">
+                <img src="subcarpetas/Imagenes/LAO.jpg" alt="Icono personalizado" class="menu-icon button">
+                <img src="subcarpetas/Imagenes/LAO.jpg" alt="Icono personalizado" class="menu-icon button">
+                <img src="subcarpetas/Imagenes/LAO.jpg" alt="Icono personalizado" class="menu-icon button">
+                <img src="subcarpetas/Imagenes/LAO.jpg" alt="Icono personalizado" class="menu-icon button">
+                <ul class="dropdown" id="myDropdown">
+                    <li><a href="https://discord.gg/wB5nwnzBRH" target="_blank" aria-label="Discord">Discord</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCYJVIMdfxTMVSiI8zSc5FzA" target="_blank" aria-label="Youtube">Youtube</a></li>
+                    <li><a class="button" href="https://godiebar.github.io/Pagina/Patrocinadores/index.html" aria-label="Patrocinadores">Patrocinadores</a></li>
+                    <li><a href="https://GodieBar.github.io" class="button" aria-label="Inicio">Inicio</a></li>
+                    <li><a class="button" href="https://godiebar.github.io/Pagina/Donadores/Index.html" aria-label="Donaciones">Donaciones</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+<main>
+    
+</main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Godi. Todos los derechos reservados (imágenes y código de uso libre).</p>
+        </div>
+    </footer>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <h2 class="modal-title"></h2>
+            <p class="modal-content"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
