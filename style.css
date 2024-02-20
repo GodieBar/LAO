@@ -41,8 +41,8 @@ body {
 }
 
 .header {
-    background: linear-gradient(to bottom, #222, var(--background-color));
-    text-align: center;
+    background: linear-gradient(to bottom, #064900, var(--background-color));
+    text-align: initial ;
     padding: 20px 0;
 }
 
@@ -197,6 +197,29 @@ body {
     to {
         background-position: 100%;
     }
+}
+.menu-toggle {
+    cursor: pointer;
+    font-size: 30px;
+    margin: 10px;
+    border: 2px solid var(--text-color);
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.2s, color 0.2s;
+    transform-style: preserve-3d; /* Añade perspectiva 3D al botón */
+}
+
+.menu-icon {
+    width: 150px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 8px;
+    transition: transform 0.3s; /* Añade transición al efecto 3D */
+}
+
+.menu-icon:hover {
+    transform: perspective(100px) rotateX(15deg); /* Aplica perspectiva 3D al pasar el ratón */
 }
 
 /* Resto del código permanece igual */
