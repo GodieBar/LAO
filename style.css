@@ -419,3 +419,23 @@ color: white; /* Puedes ajustar el color del texto según tu diseño */
 font-size: 18px;
 font-weight: bold;
 }   
+.cube {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease; /* Agrega una transición suave */
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border: 2px solid var(--text-color);
+    transition: background-color 0.3s; /* Agrega una transición suave para el color de fondo */
+}
+
+#face1 { background-color: rgba(255, 255, 255, 0.8); transform: translateZ(75px); }
+#face2 { background-color: rgba(255, 255, 255, 0.8); transform: rotateY(90deg) translateZ(75px); }
+#face3 { background-color: rgba(255, 255, 255, 0.8); transform: rotateY(180deg) translateZ(75px); }
+#face4 { background-color: rgba(255, 255, 255, 0.8); transform: rotateY(-90deg) translateZ(75px); }

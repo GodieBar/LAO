@@ -1,7 +1,8 @@
 let currentRotation = 0;
 
 function toggleMenu() {
-    // Agrega tu lógica para mostrar/ocultar el menú aquí
+    var menu = document.getElementById('menu');
+    menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
 }
 
 function changeFace(direction) {
@@ -14,8 +15,4 @@ function changeFace(direction) {
     }
 
     cube.style.transform = `rotateY(${currentRotation}deg)`;
-}
-function toggleMenu() {
-    var menu = document.getElementById('menu');
-    menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
 }
