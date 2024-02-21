@@ -360,13 +360,13 @@ margin-right: 5px; /* Puedes ajustar el margen según sea necesario */
 /* Posicionamiento de los botones */
 #btnLeft {
 position: absolute;
-left: 260px; /* Ajusta la posición izquierda según sea necesario */
+left: 160px; /* Ajusta la posición izquierda según sea necesario */
 bottom: 50px; /* Ajusta la posición inferior según sea necesario */
 }
 
 #btnRight {
 position: absolute;
-right: 255px; /* Ajusta la posición derecha según sea necesario */
+right: 149px; /* Ajusta la posición derecha según sea necesario */
 bottom: 50px; /* Ajusta la posición inferior según sea necesario */
 }
 
