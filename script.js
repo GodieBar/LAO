@@ -15,11 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var dropdown = document.getElementById("myDropdown");
 
         if (dropdown) {
-            if (dropdown.style.display === "block") {
-                dropdown.style.display = "none";
-            } else {
-                dropdown.style.display = "block";
-            }
+            dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
         }
     }
 
@@ -35,9 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var dropdown = document.getElementById("myDropdown");
 
         if (dropdown && !event.target.matches('.menu-toggle')) {
-            if (dropdown.style.display === "block") {
-                dropdown.style.display = "none";
-            }
+            dropdown.style.display = "none";
         }
     };
 
@@ -64,20 +58,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Obtén el cubo y las caras
     const cube = document.getElementById('cube');
-    const faces = document.querySelectorAll('.face');
     let currentFace = 0; // Inicia en la primera cara
+    let animation;
 
     // Función para cambiar la cara del cubo
     function changeFace(direction) {
-        if (direction === 'left') {
-            currentFace = (currentFace - 1 + faces.length) % faces.length;
-        } else if (direction === 'right') {
-            currentFace = (currentFace + 1) % faces.length;
-        }
+        if (!animation) {
+            if (direction === 'left') {
+                currentFace = (currentFace - 1 + 4) % 4;
+            } else if (direction === 'right') {
+                currentFace = (currentFace + 1) % 4;
+            }
 
-        faces.forEach((face, index) => {
-            face.style.transform = `rotateY(${90 * (index - currentFace)}deg)`;
-        });
+            cube.style.transform = `rotateY(${90 * currentFace}deg)`;
+
+            // Restablece la variable de animación
+            animation = null;
+        }
     }
 
     // Asigna la función changeFace a los botones izquierdo y derecho
@@ -89,59 +86,23 @@ document.addEventListener("DOMContentLoaded", function () {
         changeFace('right');
     });
 
-    // Escucha clics en el cubo para cambiar la cara manualmente
-    cube.addEventListener('click', function () {
-        changeFace('right');
-    });
-});
-    const cube = document.getElementById('cube');
-    let currentFace = 0;
-
-    function changeFace(direction) {
-        if (direction === 'left') {
-            currentFace = (currentFace - 1 + 4) % 4;
-        } else if (direction === 'right') {
-            currentFace = (currentFace + 1) % 4;
+    // Agregar la lógica para detener/reanudar la animación del cubo
+    document.getElementById('stopCube').addEventListener('click', function () {
+        if (animation) {
+            animation.cancel();
+            animation = null;
+        } else {
+            // Inicia la animación solo si no está en pausa
+            if (cube.style.animationPlayState !== 'paused') {
+                animation = cube.animate(
+                    [{ transform: 'rotateY(0deg)' }, { transform: 'rotateY(360deg)' }],
+                    {
+                        duration: 5000,
+                        iterations: Infinity,
+                        easing: 'linear'
+                    }
+                );
+            }
         }
-
-        cube.style.transform = `rotateY(${90 * currentFace}deg)`;
-    }
-
-    document.getElementById('btnLeft').addEventListener('click', function () {
-        changeFace('left');
     });
-
-    document.getElementById('btnRight').addEventListener('click', function () {
-        changeFace('right');
-    });
-    // Obtén el cubo y las caras
-const cube = document.getElementById('cube');
-const faces = document.querySelectorAll('.face');
-let currentFace = 0; // Inicia en la primera cara
-
-// Función para cambiar la cara del cubo
-function changeFace(direction) {
-    if (direction === 'left') {
-        currentFace = (currentFace - 1 + faces.length) % faces.length;
-    } else if (direction === 'right') {
-        currentFace = (currentFace + 1) % faces.length;
-    }
-
-    faces.forEach((face, index) => {
-        face.style.transform = `rotateY(${90 * (index - currentFace)}deg)`;
-    });
-}
-
-// Asigna la función changeFace a los botones izquierdo y derecho
-document.getElementById('btnLeft').addEventListener('click', function () {
-    changeFace('left');
-});
-
-document.getElementById('btnRight').addEventListener('click', function () {
-    changeFace('right');
-});
-
-// Escucha clics en el cubo para cambiar la cara manualmente
-cube.addEventListener('click', function () {
-    changeFace('right');
 });
