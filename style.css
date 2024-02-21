@@ -323,8 +323,8 @@
         width: 150px;
         height: 150px;
         transform-style: preserve-3d;
-        /*    transform: rotateX(0) rotateY(0);*/
-        /*    animation: rotateCube 5s infinite linear;*/
+       /*    transform: rotateX(0) rotateY(0);*/
+        /*animation: rotateCube 5s infinite linear;*/
     }
     
     .face {
@@ -348,8 +348,44 @@
     }
     
     button {
-        margin-top: 20px;
+        margin-top: 50px;
         padding: 10px;
         cursor: pointer;
+        margin: 20px;
     }
-    
+    #btnLeft img, #btnRight img {
+    width: 30px; /* Ajusta el tamaño según sea necesario */
+    height: 30px;
+    margin-right: 5px; /* Puedes ajustar el margen según sea necesario */
+}
+/* Estilo para los botones de rotación */
+#btnLeft,
+#btnRight {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#btnLeft img,
+#btnRight img {
+    width: 70px; /* Ajusta el tamaño según sea necesario */
+    height: 70px;
+    margin-right: 5px; /* Puedes ajustar el margen según sea necesario */
+}
+
+/* Posicionamiento de los botones */
+#btnLeft {
+    position: absolute;
+    left: 260px; /* Ajusta la posición izquierda según sea necesario */
+    bottom: 50px; /* Ajusta la posición inferior según sea necesario */
+}
+
+#btnRight {
+    position: absolute;
+    right: 260px; /* Ajusta la posición derecha según sea necesario */
+    bottom: 50px; /* Ajusta la posición inferior según sea necesario */
+}
