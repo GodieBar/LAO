@@ -2,63 +2,108 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <!-- Asegura que la página sea responsive en diferentes dispositivos -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Godi</title>
-    <!-- Vincula el archivo de estilos CSS -->
-    <link rel="stylesheet" href="REGLAS.css">
+    <title>GODI</title>
+    <link rel="stylesheet" href="styleGodi.css">
 </head>
 <body>
-    <!-- CABECERA: Contiene el título y la navegación de la página -->
-    <header class="header">
-        <div class="container">
-            <!-- Botón de menú tipo hamburguesa que al hacer clic ejecuta toggleMenu() para mostrar u ocultar el menú -->
-            <button class="menu-toggle" onclick="toggleMenu()">🥷</button>
-            <!-- Título principal de la página -->
-            <h1 class="main-title">Godi</h1>
-            <!-- Navegación principal -->
-            <nav class="main-nav">         
-                <!-- Menú desplegable que se muestra/oculta al hacer clic en el botón del menú -->
-                <ul class="dropdown" id="myDropdown">
-                    <li><a href="https://discord.gg/wB5nwnzBRH" target="_blank" aria-label="Discord">Discord</a></li>
-                    <li><a href="https://www.youtube.com/channel/UCYJVIMdfxTMVSiI8zSc5FzA" target="_blank" aria-label="Youtube">Youtube</a></li>
-                    <li><a class="button" href="godiebar.github.io/Pagina/Patrocinadores/index.html" aria-label="Patrocinadores">Patrocinadores</a></li>
-                </ul>                                    
-            </nav>
-            <!-- Otros enlaces de navegación -->
-            <nav class="main-nav">         
-                <ul class="options">
-                    <li><a href="https://GodieBar.github.io" class="button" aria-label="Inicio">Inicio</a></li>
-                </ul> 
-            </nav>
-            <!-- Más enlaces de navegación -->
-            <nav class="main-nav">
-                <ul class="options">
-                    <li><a class="button" href="https://godiebar.github.io/Pagina/Donadores/Index.html" aria-label="Donaciones">Donaciones</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section class="section">
+    <div class="page-container">
+        <header class="header">
             <div class="container">
-                <h1 class="section-title">Nequi</h1>
-                <img src="/subcarpetas/Imagenes/Nequi.jpg" alt="Codigo QR del Nequi" width="300">
+                <button class="menu-toggle" onclick="toggleMenu()">🥷</button>
+                <div id="menu" class="menu">
+                    <ul>
+                        <li><a href="https://godiebar.github.io/LAO/">Inicio</a></li>
+                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <nav class="main-nav">
+                    <button id="btnLeft" onclick="changeFace('left')">
+                        <img src="Pagina/subcarpetas/Imagenes/botonizq.gif" alt="Rotar Izquierda">
+                    </button>
+                    <div class="cube-container">
+                        <div class="cube" id="cube"> 
+                            <div class="face" id="face1">
+                                <a href="pagina1.html" class="face" id="face1">
+                                    <img src="Pagina/subcarpetas/Imagenes/1-150.gif" alt="Cara 1">  
+                                </a>    
+                            </div>
+                             <div class="face" id="face2">
+                                <a href="https://godiebar.github.io/LAO/GODI" class="face" id="face1">
+                                    <img src="Pagina/subcarpetas/Imagenes//2-150.gif" alt="Cara 2">
+                                </a>     
+                            </div>
+                            <div class="face" id="face3">
+                                <a href="https://godiebar.github.io/LAO/REGLAS" class="face" id="face1">
+                                <img src="Pagina/subcarpetas/Imagenes//3-150.gif" alt="Cara 3">
+                                </a>
+                            </div>
+                            <div class="face" id="face4">
+                                <a href="pagina1.html" class="face" id="face1">
+                                    <img src="Pagina/subcarpetas/Imagenes//4-150.gif" alt="Cara 4">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="btnRight" onclick="changeFace('right')">
+                        <img src="Pagina/subcarpetas/Imagenes//botondere.gif" alt="Rotar Derecha">
+                    </button>
+                </nav>
             </div>
-        </section>
-    </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Patrocinadores y Colaboradores de La Cocina. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="cerrarModal()">&times;</span>
-            <h2 class="modal-title"></h2>
-            <p class="modal-content"></p>
-        </div>
+        </header>
+<main>
+<div class="content">
+<div class="container">
+<section class="columns">
+    <article class="column" style="background-image: url('subcarpetas/Imagenes/subfondo.png');">
+        <img src="Pagina/subcarpetas/Imagenes/Tienda (2).gif" alt="Botón de Tienda" class="button" onclick="window.location.href='GodieBar.github.io/Pagina/Tienda/index.html'">
+    </article>
+    <article class="column" style="background-image: url('subcarpetas/Imagenes/subfondo.png');">
+        <img src="Pagina/subcarpetas/Imagenes/siguenos.gif" alt="Botón de Síguenos" class="button" onclick="window.location.href='GodieBar.github.io/Pagina/Redes/index.html'">
+    </article>
+</section>
+</div>
+</div>
+
+<div class="content">
+<div class="container">
+<section class="columns">
+    <article class="column">
+        <video width="900" height="600" autoplay muted>
+            <source src="Pagina/subcarpetas/Imagenes/LAO.mp4" type="video/mp4">
+            Tu navegador no soporta el tag de video.
+        </video>
+    </article>
+</section>
+</div>
+</div>
+<div class="content">
+<div class="container">
+<section class="columns">
+    <article class="column" style="background-image: url('subcarpetas/Imagenes/subfondo.png');">
+        <img src="Pagina/subcarpetas/Imagenes/foro.gif" alt="Botón de Foro" class="button" onclick="window.location.href='//aca va la pagina del foro cuando lo cree'">
+    </article>
+    <article class="column" style="background-image: url('subcarpetas/Imagenes/subfondo.png');">
+        <img src="Pagina/subcarpetas/Imagenes//Discord.gif" alt="Botón de Discord" class="button" onclick="window.location.href='discord.gg/r5vuNrND8m'">
+    </article>
+</section>
+</div>
+</div>
+</main>
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Godi. Todos los derechos reservados (imágenes y código de uso libre).</p>
     </div>
-    <script src="REGLAS.js"></script>
+</footer>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="cerrarModal()">&times;</span>
+        <h2 class="modal-title"></h2>
+        <p class="modal-content"></p>
+    </div>
+</div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
