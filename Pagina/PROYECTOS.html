@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROYECTOS</title>
-    <link rel="stylesheet" href="PROYECTOS.css">
+    <title>LAO</title>
+    <link rel="stylesheet" href="styleLAO.css">
 </head>
 <body>
     <div class="page-container">
@@ -15,13 +15,13 @@
                 <div id="menu" class="menu">
                     <ul>
                         <li><a href="https://godiebar.github.io/LAO/INICIO">Inicio</a></li>
-                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#">foro LAO</a></li>
                         <li><a href="#">Contacto</a></li>
                     </ul>
                 </div>
                 <nav class="main-nav">
                     <button id="btnLeft" onclick="changeFace('left')">
-                        <img src="Pagina/subcarpetas/Imagenes/botonizq.gif" alt="Rotar Izquierda">
+                        <img src="subcarpetas/Imagenes/botonizq.gif" alt="Rotar Izquierda">
                     </button>
                     <div class="cube-container">
                         <div class="cube" id="cube"> 
@@ -41,36 +41,67 @@
                                 </a>
                             </div>
                             <div class="face" id="face4">
-                                <a href="https://godiebar.github.io/LAO/Pagina/" class="face" id="face1">
+                                <a href="https://godiebar.github.io/LAO/Pagina/PROYECTOS" class="face" id="face1">
                                     <img src="subcarpetas/Imagenes/4-150.gif" alt="Cara 4">
                                 </a>
                             </div>
                         </div>
                     </div>
                     <button id="btnRight" onclick="changeFace('right')">
-                        <img src="subcarpetas/Imagenes//botondere.gif" alt="Rotar Derecha">
+                        <img src="subcarpetas/Imagenes/botondere.gif" alt="Rotar Derecha">
                     </button>
                 </nav>
             </div>
         </header>
-    
-<main>
-    
-</main>
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Proyectos </h1>
+                <div class="columns">
+                    <article class="column" style="background-image: url('subcarpetas/Imagenes/LAO.jpg');">
+                        <h2 class="column-title">Proyecto</h2>
+                        <p class="column-text">Proyecto.</p>
+                        <a href="#" target="_blank" class="button" aria-label="Seguir">MUY PRONTO...</a>
+                    
+                </div>
+                <h1 class="section-title">Tienda</h1>
+                    <div class="columns">
+                        <article class="column" style="background-image: url('subcarpetas/Imagenes/subfondo.png');">
+                            <h2 class="column-title">En proceso</h2>
+                            <p class="column-text">Emprender con variedad de ventas.</p>
+                            <img src="subcarpetas/Imagenes/Tienda (2).gif" alt="Botón de Tienda" class="button" onclick="window.location.href='#'">
+                    </div>
+                    <h1 class="section">Foro</h1>
+                    <div class="columns">
+                        <article class="column" style="background-image: url('subcarpetas/Imagenes/subfondo.png');">                        
+                            <h2 class="column-title">En proceso</h2>
+                            <p class="column-text">Foros Para las Organizaciones y reportar miembros... mas</p>
+                            <img src="subcarpetas/Imagenes/foro.gif" alt="Botón de Tienda" class="button" onclick="window.location.href='#'">
+                    </div>
+                    
+                    <h1 class="section">Discord</h1>
+                    <div class="columns">
+                        <article class="column" style="background-image: url('subcarpetas/Imagenes/subfondo.png');">
+                            <h2 class="column-title">Discord</h2>
+                            <p class="column-text">Discord esta creado pero no es el oficial</p>
+                            <img src="subcarpetas/Imagenes/Discord.gif" alt="Botón de Tienda" class="button" onclick="window.location.href='#'">
+                    </div>
+                </article>
+                </div>
+        </section>
+    </main>
     <footer>
         <div class="container">
-            <p>&copy; 2024 Godi. Todos los derechos reservados (imágenes y código de uso libre).</p>
+            <p>&copy; 2023 Patrocinadores y Colaboradores de La Cocina. Todos los derechos reservados.</p>
         </div>
     </footer>
-
     <div id="myModal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="cerrarModal()">&times;</span>
+            <span class="close" onc|lick="cerrarModal()">&times;</span>
             <h2 class="modal-title"></h2>
             <p class="modal-content"></p>
         </div>
     </div>
-
-    <script src="PROYECTOS.css"></script>
+    <script src="scriptLAO.js"></script>
 </body>
 </html>
