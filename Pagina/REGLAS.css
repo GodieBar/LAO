@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #800000;
-    --hover-color: #A52A2A;
+    --primary-color: #07d600bb;
+    --hover-color: #003605;
     --background-color: #000;
     --text-color: #fff;
     --shadow-color: rgba(0, 0, 0, 0.2);
@@ -12,19 +12,38 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
     color: var(--text-color);
-    background-color: var(--background-color);
+    /* Elimina la propiedad overflow: hidden; para permitir el desplazamiento */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    background: linear-gradient(270deg, #000, #33c940, #000);
+    background-size: 600% 600%;
+    animation: gradientAnimation 15s ease infinite;
+    transition: background-color 0.3s;
 }
 
 .container {
-    max-width: 540px;
+    max-width: 1000px;
     margin: auto;
     padding: 20px;
 }
 
 .header {
-    background: linear-gradient(to bottom, #222, var(--background-color));
-    text-align: center;
-    padding: 20px 0;
+    background: linear-gradient(to bottom, #064900, var(--background-color));
+    text-align: initial ;
+    padding: 0px 0;
 }
 
 .main-title {
@@ -48,10 +67,10 @@ body, html {
     text-decoration: none;
     color: var(--text-color);
     display: block;
-    padding: 10px 20px;
+    padding: 15px;
     transition: color 0.3s, background-color 0.3s;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 8px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -63,6 +82,15 @@ body, html {
 .button {
     background-color: var(--primary-color);
     transition: background-color 0.3s;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button:hover {
@@ -71,12 +99,12 @@ body, html {
 
 .columns {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
 }
 
 .column {
-    background-size: cover;
+    background-size: contain;
     background-position: center;    
     padding: 25px;
     border-radius: 10px;
@@ -108,8 +136,8 @@ body, html {
     font-size: 30px;
     margin: 10px;
     border: 2px solid var(--text-color);
-    padding: 5px;
-    border-radius: 5px;
+    padding: 15px;
+    border-radius: 8px;
     transition: background-color 0.2s, color 0.2s;
 }
 
@@ -124,7 +152,7 @@ body, html {
     top: 100%;
     left: 0;
     background: #333;
-    border-radius: 5px;
+    border-radius: 100px;
     box-shadow: 0 4px 6px var(--shadow-color);
     z-index: 1;
 }
@@ -144,3 +172,270 @@ body, html {
 .dropdown li:hover {
     background-color: var(--primary-color);
 }
+
+.menu-toggle {
+    background: none;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 150px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.stop-animation {
+    background-image: url('subcarpetas/Imagenes/LAOYCUERVOS.gif');
+    background-size: cover;
+    animation: stopAnimation 1ms forwards;
+}
+
+@keyframes stopAnimation {
+    to {
+        background-position: 100%;
+    }
+}
+.menu-toggle {
+    cursor: pointer;
+    font-size: 30px;
+    margin: 10px;
+    border: 2px solid var(--text-color);
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.2s, color 0.2s;
+    transform-style: preserve-3d; /* Añade perspectiva 3D al botón */
+}
+
+.menu-icon {
+    width: 75px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 8px;
+    transition: transform 0.3s; /* Añade transición al efecto 3D */
+}
+
+.menu-icon:hover {
+    transform: perspective(100px) rotateX(15deg); /* Aplica perspectiva 3D al pasar el ratón */
+}
+
+/* Resto del código permanece igual */
+.menu-toggle {
+    /* ... otras propiedades ... */
+    transform-style: preserve-3d; /* Añade perspectiva 3D al botón */
+}
+
+.menu-icon {
+    /* ... otras propiedades ... */
+    border-radius: 8px;
+    transition: transform 0.3s; /* Añade transición al efecto 3D */
+}
+
+.menu-icon:hover {
+    transform: perspective(100px) rotateX(15deg); /* Aplica perspectiva 3D al pasar el ratón */
+}
+.page-container {
+    min-height: 100vh; /* Establece la altura mínima al 100% de la altura de la ventana */
+    overflow: auto;   /* Agrega desplazamiento si el contenido es más alto que la ventana */
+}
+.header {
+    background: linear-gradient(to bottom, #064900, var(--background-color));
+    text-align: initial ;
+    padding: 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-icon {
+    width: 150px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    transform-style: preserve-3d; /* Añade perspectiva 3D a las imágenes del menú */
+}
+
+.menu-icon img {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Oculta la cara posterior de la imagen */
+}
+.cube-container {
+    perspective: 600px; /* Ajusta la perspectiva para el efecto 3D del cubo */
+    width: 150px; /* Ajusta el ancho del cubo */
+    height: 150px; /* Ajusta la altura del cubo */
+    margin: auto;
+}   
+
+.menu-icon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+@keyframes rotateCube {
+    0% {
+        transform: rotateX(0) rotateY(0);
+    }
+    25% {
+        transform: rotateX(0) rotateY(90deg);
+    }
+    50% {
+        transform: rotateX(0) rotateY(180deg);
+    }
+    75% {
+        transform: rotateX(0) rotateY(270deg);
+    }
+    100% {
+        transform: rotateX(0) rotateY(360deg);
+    }
+}
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.cube-container {
+    perspective: 315px; /* Ajusta la perspectiva para el efecto 3D del cubo */
+    width: 150px; /* Ajusta el ancho del cubo */
+    height: 150px; /* Ajusta la altura del cubo */
+    margin: auto;
+}
+
+
+.cube {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateX(0) rotateY(0);
+}
+
+.rotate-on-click {
+    animation: rotateCube 5s infinite linear;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+#face1 { background-color: rgb(0, 0, 0); transform: translateZ(75px); }
+#face2 { background-color: rgb(0, 0, 0); transform: rotateY(90deg) translateZ(75px); }
+#face3 { background-color: rgb(0, 0, 0); transform: rotateY(180deg) translateZ(75px); }
+#face4 { background-color: rgb(0, 0, 0); transform: rotateY(-90deg) translateZ(75px); }
+
+@keyframes rotateCube {
+    0% { transform: rotateX(0) rotateY(0); }
+    25% { transform: rotateX(0) rotateY(90deg); }
+    50% { transform: rotateX(0) rotateY(180deg); }
+    75% { transform: rotateX(0) rotateY(270deg); }
+    100% { transform: rotateX(0) rotateY(360deg); }
+}
+
+button {
+    margin-top: 50px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 20px;
+}
+#btnLeft img, #btnRight img {
+width: 30px; /* Ajusta el tamaño según sea necesario */
+height: 30px;
+margin-right: 5px; /* Puedes ajustar el margen según sea necesario */
+}
+/* Estilo para los botones de rotación */
+#btnLeft,
+#btnRight {
+background: none;
+border: none;
+cursor: pointer;
+margin: 20px;
+padding: 10px;
+display: flex;
+align-items: center;
+}
+
+#btnLeft img,
+#btnRight img {
+width: 80px; /* Ajusta el tamaño según sea necesario */
+height: 80px;
+margin-right: 5px; /* Puedes ajustar el margen según sea necesario */
+}
+
+/* Posicionamiento de los botones */
+#btnLeft {
+position: absolute;
+left: 260px; /* Ajusta la posición izquierda según sea necesario */
+bottom: 50px; /* Ajusta la posición inferior según sea necesario */
+}
+
+#btnRight {
+position: absolute;
+right: 255px; /* Ajusta la posición derecha según sea necesario */
+bottom: 50px; /* Ajusta la posición inferior según sea necesario */
+}
+
+.face {
+width: 100%;
+height: 100%;
+position: absolute;
+backface-visibility: hidden;
+}
+.menu {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: #333; /* Puedes ajustar el color del fondo según tu diseño */
+display: none; /* Inicialmente oculto */
+padding: 20px;
+box-sizing: border-box;
+}
+
+.menu ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.menu ul li {
+display: inline-block;
+margin-right: 20px;
+}
+
+.menu ul li a {
+text-decoration: none;
+color: white; /* Puedes ajustar el color del texto según tu diseño */
+font-size: 18px;
+font-weight: bold;
+}   
+.cube {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease; /* Agrega una transición suave */
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border: 2px solid var(--text-color);
+    transition: background-color 0.3s; /* Agrega una transición suave para el color de fondo */
+}
+
+#face1 { background-color: rgba(255, 255, 255, 0.8); transform: translateZ(75px); }
+#face2 { background-color: rgba(255, 255, 255, 0.8); transform: rotateY(90deg) translateZ(75px); }
+#face3 { background-color: rgba(255, 255, 255, 0.8); transform: rotateY(180deg) translateZ(75px); }
+#face4 { background-color: rgba(255, 255, 255, 0.8); transform: rotateY(-90deg) translateZ(75px); }
