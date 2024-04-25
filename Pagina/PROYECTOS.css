@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #07d600bb;
+    --primary-color: #8400ff;
     --hover-color: #003605;
     --background-color: #000;
     --text-color: #fff;
@@ -28,7 +28,7 @@ body, html {
 }
 
 body {
-    background: linear-gradient(270deg, #000, #33c940, #000);
+    background: linear-gradient(270deg, #000, #c93333, #000);
     background-size: 600% 600%;
     animation: gradientAnimation 15s ease infinite;
     transition: background-color 0.3s;
@@ -186,6 +186,13 @@ body {
     display: inline-block;
     vertical-align: middle;
 }
+
+.stop-animation {
+    background-image: url('subcarpetas/Imagenes/LAOYCUERVOS.gif');
+    background-size: cover;
+    animation: stopAnimation 1ms forwards;
+}
+
 @keyframes stopAnimation {
     to {
         background-position: 100%;
@@ -221,7 +228,15 @@ body {
     transform-style: preserve-3d; /* Añade perspectiva 3D al botón */
 }
 
+.menu-icon {
+    /* ... otras propiedades ... */
+    border-radius: 8px;
+    transition: transform 0.3s; /* Añade transición al efecto 3D */
+}
 
+.menu-icon:hover {
+    transform: perspective(100px) rotateX(15deg); /* Aplica perspectiva 3D al pasar el ratón */
+}
 .page-container {
     min-height: 100vh; /* Establece la altura mínima al 100% de la altura de la ventana */
     overflow: auto;   /* Agrega desplazamiento si el contenido es más alto que la ventana */
@@ -360,13 +375,13 @@ margin-right: 5px; /* Puedes ajustar el margen según sea necesario */
 /* Posicionamiento de los botones */
 #btnLeft {
 position: absolute;
-left: 160px; /* Ajusta la posición izquierda según sea necesario */
+left: 260px; /* Ajusta la posición izquierda según sea necesario */
 bottom: 50px; /* Ajusta la posición inferior según sea necesario */
 }
 
 #btnRight {
 position: absolute;
-right: 149px; /* Ajusta la posición derecha según sea necesario */
+right: 255px; /* Ajusta la posición derecha según sea necesario */
 bottom: 50px; /* Ajusta la posición inferior según sea necesario */
 }
 

@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #07d600bb;
+    --primary-color: #000000bb;
     --hover-color: #003605;
     --background-color: #000;
     --text-color: #fff;
@@ -28,7 +28,7 @@ body, html {
 }
 
 body {
-    background: linear-gradient(270deg, #000, #33c940, #000);
+    background: linear-gradient(270deg, #000, #252525, #000);
     background-size: 600% 600%;
     animation: gradientAnimation 15s ease infinite;
     transition: background-color 0.3s;
@@ -41,7 +41,7 @@ body {
 }
 
 .header {
-    background: linear-gradient(to bottom, #064900, var(--background-color));
+    background: linear-gradient(to bottom, #490000, var(--background-color));
     text-align: initial ;
     padding: 0px 0;
 }
@@ -242,7 +242,7 @@ body {
     overflow: auto;   /* Agrega desplazamiento si el contenido es más alto que la ventana */
 }
 .header {
-    background: linear-gradient(to bottom, #064900, var(--background-color));
+    background: linear-gradient(to bottom, #490000, var(--background-color));
     text-align: initial ;
     padding: 20px 0;
     position: relative;
