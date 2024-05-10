@@ -28,7 +28,7 @@ body, html {
 }
 
 body {
-    background: linear-gradient(270deg, #000, #252525, #000);
+    background: linear-gradient(270deg, #000, #181818, #000);
     background-size: 600% 600%;
     animation: gradientAnimation 15s ease infinite;
     transition: background-color 0.3s;
@@ -41,7 +41,7 @@ body {
 }
 
 .header {
-    background: linear-gradient(to bottom, #490000, var(--background-color));
+    background: linear-gradient(to bottom, #000000, var(--background-color));
     text-align: initial ;
     padding: 0px 0;
 }
@@ -174,9 +174,9 @@ body {
 }
 
 .menu-toggle {
-    background: none;
+    background: none; 
     border: none;
-    padding: 15px;
+    padding: 25px;
     cursor: pointer;
 }
 
@@ -242,9 +242,9 @@ body {
     overflow: auto;   /* Agrega desplazamiento si el contenido es más alto que la ventana */
 }
 .header {
-    background: linear-gradient(to bottom, #490000, var(--background-color));
+    background: linear-gradient(to bottom, #000000 ,#00000000, var(--background-color));
     text-align: initial ;
-    padding: 20px 0;
+    padding: 120px 0;
     position: relative;
     overflow: hidden;
 }
@@ -304,7 +304,7 @@ body {
 }
 
 .cube-container {
-    perspective: 315px; /* Ajusta la perspectiva para el efecto 3D del cubo */
+    perspective: 20px; /* Ajusta la perspectiva para el efecto 3D del cubo */
     width: 150px; /* Ajusta el ancho del cubo */
     height: 150px; /* Ajusta la altura del cubo */
     margin: auto;
@@ -396,7 +396,7 @@ position: fixed;
 top: 0;
 left: 0;
 width: 100%;
-background-color: #333; /* Puedes ajustar el color del fondo según tu diseño */
+background-color: #000000; /* Puedes ajustar el color del fondo según tu diseño */
 display: none; /* Inicialmente oculto */
 padding: 20px;
 box-sizing: border-box;
