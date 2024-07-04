@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO LAO</title>
+    <link rel="stylesheet" href="PI.css">
+</head>
+<body>
+    <div class="page-container">
+        <header class="header">
+            <div class="container">
+                <button class="menu-toggle" onclick="toggleMenu()">
+                    <img src="Pagina/subcarpetas/Imagenes/LOGO LAO.gif" style="width: 60px; height: 60px;"></button>
+                <div id="menu" class="menu">
+                    <ul>
+                        <li><a href="https://godiebar.github.io/SHELBY/INICIO">Inicio</a></li>
+                    </ul>
+                </div>
+                <nav class="main-nav">
+                    <button id="btnLeft" onclick="changeFace('left')">
+                        <img src="Pagina/subcarpetas/Imagenes/izquier.gif" alt="Rotar Izquierda">
+                    </button>
+                    <div class="cube-container">
+                        <div class="cube" id="cube">    
+                            <div class="face" id="face1">
+                                <a href="https://godiebar.github.io/LAO/Pagina/LAO" class="face" id="face1">
+                                    <img src="Pagina/subcarpetas/Imagenes/1.gif" alt="Cara 1">  
+                                </a>    
+                            </div>
+                             <div class="face" id="face2">
+                                <a href="https://godiebar.github.io/LAO/Pagina/GODI" class="face" id="face1">
+                                    <img src="Pagina/subcarpetas/Imagenes//2-150.gif" alt="Cara 2">
+                                </a>     
+                            </div>
+                            <div class="face" id="face3">
+                                <a href="https://godiebar.github.io/LAO/Pagina/REGLAS" class="face" id="face1">
+                                <img src="Pagina/subcarpetas/Imagenes//3-150.gif" alt="Cara 3">
+                                </a>
+                            </div>
+                            <div class="face" id="face4">
+                                <a href="https://godiebar.github.io/LAO/Pagina/PROYECTOS" class="face" id="face1">
+                                    <img src="Pagina/subcarpetas/Imagenes//4-150.gif" alt="Cara 4">
+                                </a>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="btnRight" onclick="changeFace('right')">
+                        <img src="Pagina/subcarpetas/Imagenes/dere.gif" alt="Rotar Derecha">
+                    </button>
+                </nav>
+            </div>
+        </header>
+<main>
+<div class="content">
+<div class="container">
+<section class="columns">
+</section>
+</div>
+</div>
+<div class="content">
+<div class="container">
+<section class="columns">
+    <article class="column" style="background-image: url('Pagina/subcarpetas/Imagenes/subfondo.png');">
+        <video width="900" height="600" autoplay muted>
+            <source src="Pagina/subcarpetas/Imagenes/SHELBY.mp4" type="video/mp4">
+            Tu navegador no soporta el tag de video.
+        </video>
+    </article>
+</section>
+</div>
+</div>
+</main>
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Godi. Todos los derechos reservados (imágenes y código de uso libre).</p>
+    </div>
+</footer>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="cerrarModal()">&times;</span>
+        <h2 class="modal-title"></h2>
+        <p class="modal-content"></p>
+    </div>
+</div>
+</div>
+<script src="PI.js"></script>
+</body>
+</html>
