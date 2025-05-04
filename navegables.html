@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PI - Cubo 3D</title>
+  <link rel="stylesheet" href="PI.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: #111;
+      overflow: hidden;
+      color: white;
+      font-family: sans-serif;
+    }
+    .scene {
+      width: 100vw;
+      height: 100vh;
+      perspective: 1000px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .cube {
+      width: 100vw;
+      height: 100vh;
+      transform-style: preserve-3d;
+      transform: rotateX(-20deg) rotateY(0deg);
+      transition: transform 1s;
+      position: relative;
+    }
+    .face {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid #0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      box-sizing: border-box;
+    }
+    .front  { transform: rotateY(0deg) translateZ(50vw); }
+    .back   { transform: rotateY(180deg) translateZ(50vw); }
+    .right  { transform: rotateY(90deg) translateZ(50vw); }
+    .left   { transform: rotateY(-90deg) translateZ(50vw); }
+    .top    { transform: rotateX(90deg) translateZ(50vh); }
+    .bottom { transform: rotateX(-90deg) translateZ(50vh); }
+
+    .buttons {
+      position: absolute;
+      bottom: 20px;
+      display: flex;
+      gap: 10px;
+      z-index: 10;
+    }
+    button {
+      padding: 10px 20px;
+      background: #0f0;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="scene">
+    <div class="cube" id="cube">
+      <div class="face front">Logo, imágenes, nombre</div>
+      <div class="face back">Historias diarias</div>
+      <div class="face right">Redes sociales</div>
+      <div class="face left">Donaciones</div>
+      <div class="face top">Cómo unirse</div>
+      <div class="face bottom">Despedida y salir</div>
+    </div>
+  </div>
+  <div class="buttons">
+    <button onclick="rotateTo('front')">1</button>
+    <button onclick="rotateTo('back')">2</button>
+    <button onclick="rotateTo('right')">3</button>
+    <button onclick="rotateTo('left')">4</button>
+    <button onclick="rotateTo('top')">5</button>
+    <button onclick="rotateTo('bottom')">6</button>
+  </div>
+  <script>
+    const cube = document.getElementById('cube');
+
+    const rotations = {
+      front:  'rotateX(0deg) rotateY(0deg)',
+      back:   'rotateX(0deg) rotateY(180deg)',
+      right:  'rotateX(0deg) rotateY(-90deg)',
+      left:   'rotateX(0deg) rotateY(90deg)',
+      top:    'rotateX(-90deg) rotateY(0deg)',
+      bottom: 'rotateX(90deg) rotateY(0deg)',
+    };
+
+    function rotateTo(face) {
+      cube.style.transform = rotations[face];
+    }
+  </script>
+</body>
+<script src="PI.js"></script>
+</html>
